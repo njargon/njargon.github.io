@@ -24,7 +24,7 @@ description: >-
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/njargon.github.io" # サブディレクトリ名
+baseurl: ""  # 空にすることでリポジトリ名をURLに含めないようにする
 url: "https://njargon.github.io" # GitHub PagesのURL
 twitter_username: jekyllrb
 github_username: jekyll
