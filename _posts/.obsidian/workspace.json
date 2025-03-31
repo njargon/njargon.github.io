@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "無題のファイル.md",
+                "file": "2025-03-31-katta.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "無題のファイル"
+              "title": "2025-03-31-katta"
             }
           }
         ],
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "無題のファイル.md",
+                "file": "2025-03-31-katta.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "無題のファイルへのバックリンク"
+              "title": "2025-03-31-kattaへのバックリンク"
             }
           },
           {
@@ -129,12 +129,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "無題のファイル.md",
+                "file": "2025-03-31-katta.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "無題のファイルからのアウトゴーイングリンク"
+              "title": "2025-03-31-kattaからのアウトゴーイングリンク"
             }
           },
           {
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "無題のファイル.md",
+                "file": "2025-03-31-katta.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "無題のファイルのアウトライン"
+              "title": "2025-03-31-kattaのアウトライン"
             }
           },
           {
@@ -197,7 +197,7 @@
   },
   "active": "ea1d12d14532da34",
   "lastOpenFiles": [
-    "2025-03-31-katta.md",
-    "無題のファイル.md"
+    "無題のファイル.md",
+    "2025-03-31-katta.md"
   ]
 }
