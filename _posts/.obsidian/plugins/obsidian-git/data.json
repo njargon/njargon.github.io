@@ -17,7 +17,7 @@
   "autoBackupAfterFileChange": true,
   "treeStructure": false,
   "refreshSourceControl": true,
-  "basePath": "/Users/katoushui/project/website/njargon.github.io/_posts",
+  "basePath": "/Users/katoushui/project/website/njargon.github.io",
   "differentIntervalCommitAndPush": true,
   "changedFilesInStatusBar": false,
   "showedMobileNotice": true,
