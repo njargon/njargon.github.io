@@ -34,4 +34,5 @@ remote_theme: "mmistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
+  - jekyll-include-cache
 
