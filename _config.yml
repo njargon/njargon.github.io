@@ -30,7 +30,7 @@ twitter_username: sodemizu
 github_username: jekyll
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes-jekyll"
+remote_theme: "minimal-mistakes/minimal-mistakes"
 plugins:
   - jekyll-feed
 
