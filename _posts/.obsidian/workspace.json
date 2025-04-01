@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-03-31-katta.md",
+                "file": "2025-03-31-welcome-to-jekyll.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-03-31-katta"
+              "title": "2025-03-31-welcome-to-jekyll"
             }
           }
         ],
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2025-03-31-katta.md",
+                "file": "2025-03-31-welcome-to-jekyll.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "2025-03-31-kattaへのバックリンク"
+              "title": "2025-03-31-welcome-to-jekyllへのバックリンク"
             }
           },
           {
@@ -129,12 +129,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2025-03-31-katta.md",
+                "file": "2025-03-31-welcome-to-jekyll.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "2025-03-31-kattaからのアウトゴーイングリンク"
+              "title": "2025-03-31-welcome-to-jekyllからのアウトゴーイングリンク"
             }
           },
           {
@@ -158,13 +158,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2025-03-31-katta.md",
+                "file": "2025-03-31-welcome-to-jekyll.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "2025-03-31-kattaのアウトライン"
+              "title": "2025-03-31-welcome-to-jekyllのアウトライン"
             }
           },
           {
@@ -197,7 +197,8 @@
   },
   "active": "ea1d12d14532da34",
   "lastOpenFiles": [
-    "無題のファイル.md",
-    "2025-03-31-katta.md"
+    "2025-03-31-katta.md",
+    "2025-03-31-welcome-to-jekyll.md",
+    "無題のファイル.md"
   ]
 }
