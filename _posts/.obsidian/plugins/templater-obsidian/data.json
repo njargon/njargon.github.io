@@ -15,8 +15,8 @@
   "enable_folder_templates": true,
   "folder_templates": [
     {
-      "folder": "",
-      "template": ""
+      "folder": "Templates",
+      "template": "Templates/new-article-template.md"
     }
   ],
   "enable_file_templates": false,
