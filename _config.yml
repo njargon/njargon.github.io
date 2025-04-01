@@ -30,7 +30,7 @@ twitter_username: sodemizu
 github_username: jekyll
 
 # Build settings
-theme: "minima"
+
 plugins:
   - jekyll-feed
 
