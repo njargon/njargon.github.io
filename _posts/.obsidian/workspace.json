@@ -4,123 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "10e5f1f08f9cdfd2",
+        "id": "48eba0221bcae240",
         "type": "tabs",
         "children": [
           {
-            "id": "051c7c97a9eb2e83",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-03-31-katta.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-03-31-katta"
-            }
-          },
-          {
-            "id": "ea1d12d14532da34",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-03-31-welcome-to-jekyll.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-03-31-welcome-to-jekyll"
-            }
-          },
-          {
-            "id": "0c70ad8926e74805",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/new-article-template.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "new-article-template"
-            }
-          },
-          {
-            "id": "d1fe94e761316204",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/new-article-template.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "new-article-template"
-            }
-          },
-          {
-            "id": "31ee68c7aa0528c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-03-31-welcome-to-jekyll.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-03-31-welcome-to-jekyll"
-            }
-          },
-          {
-            "id": "ff961fe028f53d3e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/new-article-template.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "new-article-template"
-            }
-          },
-          {
-            "id": "2f864ba8ba126199",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-03-31-welcome-to-jekyll.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-03-31-welcome-to-jekyll"
-            }
-          },
-          {
-            "id": "63c90882a16ef5de",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "無題のファイル.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "無題のファイル"
-            }
-          },
-          {
-            "id": "f4594133a4c332c5",
+            "id": "b14444ce6e1f64a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -132,37 +20,8 @@
               "icon": "lucide-file",
               "title": "2025-04-01-article"
             }
-          },
-          {
-            "id": "11a67f970a92bb5e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-03-31-welcome-to-jekyll.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-03-31-welcome-to-jekyll"
-            }
-          },
-          {
-            "id": "0e8020038c475943",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Templates/new-article-template.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "new-article-template"
-            }
           }
-        ],
-        "currentTab": 10
+        ]
       }
     ],
     "direction": "vertical"
@@ -321,20 +180,21 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "0e8020038c475943",
+  "active": "b14444ce6e1f64a7",
   "lastOpenFiles": [
     "2025-04-01-article.md",
-    "無題のファイル.md",
     "2025-03-31-welcome-to-jekyll.md",
-    "無題のファイル 2.md",
-    "無題のファイル 1.md",
-    "無題のファイル 5.md",
+    "Templates/new-article-template.md",
+    "2025-03-31-katta.md",
+    "無題のファイル.md",
     "無題のファイル 4.md",
     "無題のファイル 3.md",
+    "無題のファイル 2.md",
+    "無題のファイル 1.md",
+    "Templates/startup-script.md",
+    "無題のファイル 5.md",
     "無題のフォルダ",
     "Untitled.md",
-    "2025-03-31-katta.md",
-    "Templates/new-article-template.md",
     "無題のファイaル.md",
     "Templates"
   ]

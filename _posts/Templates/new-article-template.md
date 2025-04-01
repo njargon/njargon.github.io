@@ -1,4 +1,5 @@
 <%*
 const filename = tp.date.now("YYYY-MM-DD") + "-article";
-tp.file.rename(filename);
+await tp.file.rename(filename);
+await app.vault.delete(tp.file.path());
 %>
