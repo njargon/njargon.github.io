@@ -34,3 +34,5 @@ theme: "minima"
 plugins:
   - jekyll-feed
 
+sass:
+  style: compressed

@@ -1,0 +1,14 @@
+---
+---
+
+@import "minima"; // minimaテーマのスタイルを読み込む
+
+// ここから自分のカスタムCSS
+body {
+  background-color: #fefefe;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+h1, h2, h3 {
+  color: #336699;
+}
