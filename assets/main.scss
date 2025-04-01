@@ -4,8 +4,17 @@
 @import "minima"; 
 
 // ここから自分のカスタムCSS
+
+// Oradano明朝のWebフォント読み込み
+@font-face {
+  font-family: 'Oradano Mincho';
+  src: url('/assets/fonts/Oradano-mincho-GSRR.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font: 400 16px/1.5 ten-mincho, "Gentium Plus", "Noto Serif SC", serif;
+  font-family: 'Oradano Mincho', serif;
   background-color: #fefefe;
 }
 
