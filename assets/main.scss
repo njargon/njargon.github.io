@@ -12,13 +12,22 @@ body {
   background-color: #fefefe;
 }
 
-h1, h2, h3 {
+h1 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.4rem;
   color: #336699;
 }
 
-h1 {
-  text-align: center;
+h3 {
+  font-size: 1.2rem;
+  color: #336699;
 }
+
+
 
 .svg-icon {
   width: 1.25rem;
