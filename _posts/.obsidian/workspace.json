@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-04-02-article.md",
+                "file": "2025-04-02-サンプル.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-02-article"
+              "title": "2025-04-02-サンプル"
             }
           }
         ],
@@ -198,7 +198,7 @@
   "active": "73b12bdb2696b32c",
   "lastOpenFiles": [
     "2025-04-01-article.md",
-    "2025-04-02-article.md",
+    "2025-04-02-サンプル.md",
     "2025-03-31-welcome-to-jekyll.md",
     "Templates/new-article-template.md",
     "2025-03-31-katta.md",
