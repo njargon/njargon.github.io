@@ -34,10 +34,12 @@ body {
   color: #336699 !important;
 }
 
-.post-meta {
+time.dt-published {
   display: block;
   text-align: center;
   margin-bottom: 1rem;
+  color: #666; /* オプションで少し薄めに */
+  font-size: 0.9rem; /* オプションで少し小さめに */
 }
 
 .svg-icon {
