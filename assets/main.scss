@@ -18,6 +18,12 @@ body {
   text-align: center;
 }
 
+.post .post-content {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  max-width: 42rem; // 約672px、読みやすい幅
+}
+
 .post .post-content h2 {
   font-size: 1.4rem !important;
   color: #336699 !important;
