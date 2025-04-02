@@ -19,15 +19,29 @@ body {
 }
 
 main.page-content > div.wrapper > article.post > div.post-content {
-  max-width: 40rem !important;
+  max-width: 40rem ;
   padding-left: 1.75rem ;
   padding-right: 1.75rem ;
   margin: 0 auto ;
 }
 
-.post .post-content h2 {
-  font-size: 1.4rem !important;
-  color: #336699 !important;
+.post-content h2 {
+  font-size: 1.4rem;
+  color: #336699;
+  padding-left: 1rem;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.post-content h2::before {
+  content: "";
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+  width: 4px;
+  height: 1.4em;
+  background-color: #336699;
+  border-radius: 2px;
 }
 
 .post .post-content h3 {
