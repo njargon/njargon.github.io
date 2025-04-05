@@ -75,3 +75,14 @@ main.page-content > div.wrapper > article.post > div.post-content {
   position: relative;
   padding: 0.5rem 0 0.5rem 0.5rem;
 }
+
+.post-content ul li::before {
+  content: "";
+  position: absolute;
+  left: -1.15rem;
+  top: 0.7rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #336699;
+  border-radius: 50%;
+}
