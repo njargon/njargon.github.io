@@ -92,10 +92,10 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .post-content ul li::after {
   content: "";
   position: absolute;
-  top: 0.8em;
+  top: 0.5em;
   left: -0.45rem;         /* ← 棒もポチの中心と揃える（少し右へ） */
   width: 1px;
-  height: calc(100% - 0.7em);  /* ← 下方向に伸ばすために調整 */
+  height: 100%;
   background-color: #e8e8e8;
   z-index: 0;
 }
