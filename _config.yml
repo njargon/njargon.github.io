@@ -20,7 +20,7 @@
 
 title: Your awesome title
 email: your-email@example.com
-description: >-
+header_description: >-
   たまにメモを軽く整えて吐き出すだけの記事
 baseurl: ""  # 空にすることでリポジトリ名をURLに含めないようにする
 url: "https://njargon.github.io" # GitHub PagesのURL
