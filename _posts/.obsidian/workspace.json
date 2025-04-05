@@ -107,8 +107,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "098c5603260140e9",
@@ -210,7 +209,7 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "37f9b9c5a86a19dc",
+  "active": "de554db011ed3c90",
   "lastOpenFiles": [
     "2025-04-02-サンプル.md",
     "2025-04-05-箇条書きサンプル.md",
