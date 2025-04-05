@@ -105,3 +105,16 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .post-content ul li:last-child::after {
   content: none;
 }
+
+.page-heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.site-description {
+  text-align: center;
+  font-size: 1rem;
+  color: #cfcfcf;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
