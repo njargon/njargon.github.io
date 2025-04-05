@@ -63,17 +63,44 @@ main.page-content > div.wrapper > article.post > div.post-content {
 }
 
 .post-content ul {
-  list-style-type: disc; /* デフォルトのポチを維持 */
+  list-style: none;
+  margin: 0;
   padding-left: 1.5rem;
   position: relative;
 }
 
-.post-content ul::before {
+.post-content ul li {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ポチ（丸） */
+.post-content ul li::before {
   content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0.5rem; /* ← この値で線の位置を調整 */
-  width: 0.75px;
+  top: 0.4em;
+  left: -1.1rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: #336699;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* 縦線 */
+.post-content ul li::after {
+  content: "";
+  position: absolute;
+  top: 0.9em; /* ← ポチの中心あたりから開始 */
+  left: -0.85rem;
+  width: 2px;
+  height: calc(100% - 0.9em); /* ポチの下から li の下までの距離 */
   background-color: #ccc;
+  z-index: 0;
+}
+
+/* 最後の li だけ縦線なしにする */
+.post-content ul li:last-child::after {
+  content: none;
 }
