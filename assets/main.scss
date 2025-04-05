@@ -79,10 +79,11 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .post-content ul li::before {
   content: "";
   position: absolute;
-  top: 0.55em;        /* ← 少し下へずらす */
+  top: 0.75em;        /* ← 少し下へずらす */
   left: -0.6rem;
   width: 0.35rem;
   height: 0.35rem;
+  aspect-ratio: 1 / 1;
   background-color: #c6c6c6;
   border-radius: 50%;
   z-index: 1;
@@ -93,7 +94,7 @@ main.page-content > div.wrapper > article.post > div.post-content {
   content: "";
   position: absolute;
   top: 0.5em;
-  left: -0.4rem;      /* ← 少し左にずらす */
+  left: -0.5rem;      /* ← 少し左にずらす */
   width: 1px;
   height: calc(100% + 0.5rem);
   background-color: #dbdbdb;
