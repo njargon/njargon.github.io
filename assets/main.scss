@@ -79,11 +79,11 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .post-content ul li::before {
   content: "";
   position: absolute;
-  top: 0.45em;
-  left: -0.6rem;        /* ← 少し右へ寄せる */
+  top: 0.55em;        /* ← 少し下へずらす */
+  left: -0.6rem;
   width: 0.35rem;
-  height: 0.35rem;        /* ← width と height を同じにして正円に */
-  background-color: #e3e3e3;
+  height: 0.35rem;
+  background-color: #c6c6c6;
   border-radius: 50%;
   z-index: 1;
 }
@@ -93,10 +93,10 @@ main.page-content > div.wrapper > article.post > div.post-content {
   content: "";
   position: absolute;
   top: 0.5em;
-  left: -0.35rem;         /* ← 棒もポチの中心と揃える（少し右へ） */
+  left: -0.4rem;      /* ← 少し左にずらす */
   width: 1px;
   height: calc(100% + 0.5rem);
-  background-color: #c6c6c6;
+  background-color: #dbdbdb;
   z-index: 0;
 }
 
