@@ -93,7 +93,7 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .post-content ul li::after {
   content: "";
   position: absolute;
-  top: 0.6em;
+  top: 0.63em;
   left: -0.45rem;      /* ← 少し左にずらす */
   width: 1px;
   height: calc(100% + 0.5rem);
