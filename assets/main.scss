@@ -65,24 +65,24 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .post-content ul {
   list-style: none;
   margin: 0;
-  padding-left: 1.2rem;
+  padding-left: 1rem;  /* ← 縦線とポチを全体的に右へ */
   position: relative;
 }
 
 .post-content ul li {
   position: relative;
-  padding-left: 1rem;
+  padding-left: 0.5rem; /* ← ポチとテキストの間を詰める */
   margin-bottom: 0.5rem;
 }
 
-/* ポチ（丸） */
+/* ポチ（正円） */
 .post-content ul li::before {
   content: "";
   position: absolute;
-  top: 0.4em;
-  left: -0.8rem;
-  width: 0.35rem;
-  height: 0.3rem;
+  top: 0.45em;
+  left: -0.6rem;        /* ← 少し右へ寄せる */
+  width: 0.4rem;
+  height: 0.4rem;        /* ← width と height を同じにして正円に */
   background-color: black;
   border-radius: 50%;
   z-index: 1;
@@ -92,10 +92,10 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .post-content ul li::after {
   content: "";
   position: absolute;
-  top: 0.9em; /* ← ポチの中心あたりから開始 */
-  left: -0.85rem;
+  top: 0.9em;
+  left: -0.48rem;         /* ← 棒もポチの中心と揃える（少し右へ） */
   width: 1px;
-  height: calc(100% - 0.9em); /* ポチの下から li の下までの距離 */
+  height: calc(100% - 0.9em);
   background-color: #e8e8e8;
   z-index: 0;
 }
