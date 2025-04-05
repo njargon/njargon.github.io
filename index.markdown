@@ -3,10 +3,4 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: タイトル
-description: たまにメモを軽く整えて吐き出すだけの記事
 ---
-
-# ようこそ
-
-ここはトップページの本文です。
