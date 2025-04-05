@@ -65,14 +65,14 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .post-content ul {
   list-style: none;
   margin: 0;
-  padding-left: 1.5rem;
+  padding-left: 1.2rem;
   position: relative;
 }
 
 .post-content ul li {
   position: relative;
   padding-left: 1rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* ポチ（丸） */
@@ -80,10 +80,10 @@ main.page-content > div.wrapper > article.post > div.post-content {
   content: "";
   position: absolute;
   top: 0.4em;
-  left: -1.1rem;
-  width: 0.6rem;
-  height: 0.6rem;
-  background-color: #336699;
+  left: -0.8rem;
+  width: 0.35rem;
+  height: 0.3rem;
+  background-color: black;
   border-radius: 50%;
   z-index: 1;
 }
@@ -94,9 +94,9 @@ main.page-content > div.wrapper > article.post > div.post-content {
   position: absolute;
   top: 0.9em; /* ← ポチの中心あたりから開始 */
   left: -0.85rem;
-  width: 2px;
+  width: 1px;
   height: calc(100% - 0.9em); /* ポチの下から li の下までの距離 */
-  background-color: #ccc;
+  background-color: #e8e8e8;
   z-index: 0;
 }
 
