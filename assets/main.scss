@@ -61,3 +61,17 @@ main.page-content > div.wrapper > article.post > div.post-content {
   fill: currentColor;
   margin-right: 0.3rem;
 }
+
+// 縦線つきリスト（Markdownのul対応）
+.post-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+  position: relative;
+  border-left: 2px solid #ccc;
+}
+
+.post-content ul li {
+  position: relative;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+}
