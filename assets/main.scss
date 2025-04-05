@@ -73,7 +73,7 @@ main.page-content > div.wrapper > article.post > div.post-content {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0.7rem; /* ← この値で線の位置を調整 */
-  width: 2px;
+  left: 0.5rem; /* ← この値で線の位置を調整 */
+  width: 0.75px;
   background-color: #ccc;
 }
