@@ -81,8 +81,8 @@ main.page-content > div.wrapper > article.post > div.post-content {
   position: absolute;
   top: 0.45em;
   left: -0.6rem;        /* ← 少し右へ寄せる */
-  width: 0.2rem;
-  height: 0.2rem;        /* ← width と height を同じにして正円に */
+  width: 0.4rem;
+  height: 0.4rem;        /* ← width と height を同じにして正円に */
   background-color: rgb(102, 102, 102);
   border-radius: 50%;
   z-index: 1;
