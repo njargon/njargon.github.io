@@ -95,7 +95,7 @@ main.page-content > div.wrapper > article.post > div.post-content {
   top: 0.5em;
   left: -0.45rem;         /* ← 棒もポチの中心と揃える（少し右へ） */
   width: 1px;
-  height: 100%;
+  height: calc(100% + 0.5rem);
   background-color: #e8e8e8;
   z-index: 0;
 }
