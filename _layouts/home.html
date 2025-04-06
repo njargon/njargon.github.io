@@ -19,8 +19,13 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
-        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 80 }}</p>
+        
+        {%- if post.categories -%}
+          <div class="post-categories">
+            {%- for category in post.categories -%}
+              <a href="/category/{{ category | uri_escape }}/" class="post-category">{{ category }}</a>
+            {%- endfor -%}
+          </div>
         {%- endif -%}
       </li>
       {%- endfor -%}
