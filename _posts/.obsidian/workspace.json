@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-04-02-サンプル.md",
+                "file": "2025-04-02-文章サンプル.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-04-02-サンプル"
+              "title": "2025-04-02-文章サンプル"
             }
           }
         ],
@@ -211,12 +211,12 @@
   },
   "active": "37f9b9c5a86a19dc",
   "lastOpenFiles": [
-    "2025-04-01-空白.md",
-    "2025-04-02-サンプル.md",
-    "2025-04-06-article.md",
+    "2025-04-05-箇条書きサンプル.md",
+    "2025-04-02-文章サンプル.md",
     "2025-03-31-welcome-to-jekyll.md",
     "2025-03-31-katta.md",
-    "2025-04-05-箇条書きサンプル.md",
+    "2025-04-01-空白.md",
+    "2025-04-06-article.md",
     "2025-04-01-article.md",
     "Templates/new-article-template.md",
     "無題のファイル 4.md",
