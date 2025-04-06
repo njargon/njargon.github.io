@@ -263,6 +263,7 @@ mark {
 }
 
 .marquee {
+  margin-top: 0;     /* ← 上の余白を消す */
   font-size: 0.95rem;
   color: #444;
   background-color: #f8f8f8;
@@ -278,7 +279,7 @@ mark {
 .marquee span {
   display: inline-block;
   padding-left: 100%;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 30s linear infinite;
   white-space: nowrap;
   word-break: keep-all;
   line-height: 1;
