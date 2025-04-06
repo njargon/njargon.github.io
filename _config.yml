@@ -27,6 +27,7 @@ url: "https://njargon.github.io" # GitHub PagesのURL
 twitter_username: jekyll
 github_username: jekyll
 
+show_excerpts: true
 
 # Build settings
 
