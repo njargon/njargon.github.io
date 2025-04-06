@@ -1,4 +1,5 @@
 {
   "newFileLocation": "folder",
-  "newFileFolderPath": "/"
+  "newFileFolderPath": "/",
+  "attachmentFolderPath": "attachment"
 }
