@@ -190,3 +190,38 @@ main.page-content > div.wrapper > article.post > div.post-content {
   margin-top: 0.3rem;
   margin-bottom: 1.5rem;
 }
+
+.all-categories {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.all-categories-heading {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.category-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.category-badge {
+  display: inline-block;
+  background-color: #f2f2f2;
+  color: #336699;
+  padding: 0.3rem 0.6rem;
+  font-size: 0.75rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.category-badge:hover {
+  background-color: #e0e0e0;
+}
