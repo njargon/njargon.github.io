@@ -151,3 +151,34 @@ main.page-content > div.wrapper > article.post > div.post-content {
   color: #444;
   margin-top: 2rem;
 }
+
+.post-list {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* ← 中央揃えの決め手！ */
+}
+
+.post-list li {
+  margin-bottom: 2rem;
+}
+
+.post-meta {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #999;
+  text-align: center;
+}
+
+.post-link {
+  font-size: 1.2rem;
+  color: #336699;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 0.3rem;
+}
+
+.post-list li p {
+  text-align: center;
+  margin-top: 0.5rem;
+}
