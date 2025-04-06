@@ -7,18 +7,30 @@ layout: default
     <span>🦆💨 　🐓💨 　🗞️💨　　　　　🐈💨　　　　　　　　　　　　　　　　　　　　　　　　　🐇💨</span>
   </div>
 
+  <!-- 練習カテゴリ記事を横スクロールで表示 -->
+  <div class="practice-marquee">
+    <div class="scroll-content">
+      {%- assign practice_posts = site.posts | where_exp: "post", "post.categories contains '練習'" -%}
+      {%- for post in practice_posts -%}
+        <a class="practice-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        &nbsp;&nbsp;／&nbsp;&nbsp;
+      {%- endfor -%}
+    </div>
+  </div>
+
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- assign filtered_posts = site.posts | reject: "categories", "練習" -%}
+      {%- for post in filtered_posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">
           {{ post.date | date: date_format }}
           {%- if post.author -%}
-           ・{{ post.author }}
+            ・{{ post.author }}
           {%- endif -%}
         </span>
         <h3>
@@ -27,15 +39,12 @@ layout: default
           </a>
         </h3>
         {%- if site.show_excerpts -%}
-        <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 80 }}</p>
+          <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 80 }}</p>
         {%- endif -%}
         <hr class="post-divider">
       </li>
       {%- endfor -%}
     </ul>
-    
-
-    
   {%- endif -%}
-
 </div>
+
