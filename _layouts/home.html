@@ -27,6 +27,7 @@ layout: default
         {%- if site.show_excerpts -%}
         <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 80 }}</p>
         {%- endif -%}
+        <hr class="post-divider">
       </li>
       {%- endfor -%}
     </ul>
