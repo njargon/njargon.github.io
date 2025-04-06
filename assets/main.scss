@@ -18,6 +18,11 @@ body {
   text-align: center;
 }
 
+.page-content {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
 main.page-content > div.wrapper > article.post > div.post-content {
   max-width: 40rem ;
   padding-left: 1.75rem ;
