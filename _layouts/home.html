@@ -8,19 +8,29 @@ layout: default
   </div>
 
     <!-- 練習カテゴリ記事を横スクロールで表示 -->
-  <div class="practice-scroll">
-    <div class="scroll-container">
-      {%- assign practice_array = site.posts | where_exp: "post", "post.categories contains '練習'" -%}
-      {%- assign practice_string = site.posts | where_exp: "post", "post.categories == '練習'" -%}
-
-      {%- for post in practice_array -%}
-        <a class="practice-card" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      {%- endfor -%}
-      {%- for post in practice_string -%}
-        <a class="practice-card" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      {%- endfor -%}
+    <div class="practice-scroll">
+      <div class="scroll-container">
+        {%- assign practice_array = site.posts | where_exp: "post", "post.categories contains '練習'" -%}
+        {%- assign practice_string = site.posts | where_exp: "post", "post.categories == '練習'" -%}
+    
+        {%- for post in practice_array -%}
+          <a class="practice-card" href="{{ post.url | relative_url }}">
+            {% if post.thumbnail %}
+              <img class="practice-thumb" src="{{ post.thumbnail }}" alt="thumbnail">
+            {% endif %}
+            <span class="practice-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+          </a>
+        {%- endfor -%}
+        {%- for post in practice_string -%}
+          <a class="practice-card" href="{{ post.url | relative_url }}">
+            {% if post.thumbnail %}
+              <img class="practice-thumb" src="{{ post.thumbnail }}" alt="thumbnail">
+            {% endif %}
+            <span class="practice-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+          </a>
+        {%- endfor -%}
+      </div>
     </div>
-  </div>
 
  
 
