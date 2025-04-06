@@ -280,8 +280,9 @@ mark {
   font-size: 0.95rem;
   color: #444;
   background-color: #f8f8f8;
- 
-  
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 0.3rem; /* 必要ならここで調整 */
   padding: 0.3rem 0;
   overflow: hidden;
   white-space: nowrap;
