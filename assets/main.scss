@@ -134,6 +134,7 @@ main.page-content > div.wrapper > article.post > div.post-content {
   margin: 0;
   text-decoration: none;
   color: inherit;
+  line-height: 1.2; /* 行の高さを調整 */
 }
 
 .header-description {
@@ -141,4 +142,5 @@ main.page-content > div.wrapper > article.post > div.post-content {
   color: #c7c7c7;
   margin-top: 0rem; 
   margin: 0;
+  line-height: 1.2; /* 行の高さを調整 */
 }
