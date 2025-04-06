@@ -129,7 +129,9 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .site-title {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 0rem;
+  margin: 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 .header-description {
