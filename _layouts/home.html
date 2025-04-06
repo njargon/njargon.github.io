@@ -7,17 +7,22 @@ layout: default
     <span>🦆💨 　🐓💨 　🗞️💨　　　　　🐈💨　　　　　　　　　　　　　　　　　　　　　　　　　🐇💨</span>
   </div>
 
-  <!-- 練習カテゴリ記事を横スクロールで表示 -->
-   
-  <div class="practice-marquee">
-    <div class="scroll-content">
-      {%- assign practice_posts = site.posts | where_exp: "post", "post.categories contains '練習' or post.categories == '練習'" -%}
-      {%- for post in practice_posts -%}
-        <a class="practice-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        &nbsp;&nbsp;／&nbsp;&nbsp;
+    <!-- 練習カテゴリ記事を横スクロールで表示 -->
+  <div class="practice-scroll">
+    <div class="scroll-container">
+      {%- assign practice_array = site.posts | where_exp: "post", "post.categories contains '練習'" -%}
+      {%- assign practice_string = site.posts | where_exp: "post", "post.categories == '練習'" -%}
+
+      {%- for post in practice_array -%}
+        <a class="practice-card" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      {%- endfor -%}
+      {%- for post in practice_string -%}
+        <a class="practice-card" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
       {%- endfor -%}
     </div>
   </div>
+
+ 
 
   {{ content }}
 
