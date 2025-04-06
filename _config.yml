@@ -21,7 +21,7 @@
 title: 庭で飼ってたきじ
 email: your-email@example.com
 header_description: >-
-  庭で飼っている「きじ」がここに脱走してくることがあります。
+  庭で飼っていた「きじ」がたまに脱走してくる場所
 baseurl: ""  # 空にすることでリポジトリ名をURLに含めないようにする
 url: "https://njargon.github.io" # GitHub PagesのURL
 twitter_username: jekyll
