@@ -8,6 +8,7 @@ layout: default
   </div>
 
   <!-- 練習カテゴリ記事を横スクロールで表示 -->
+   
   <div class="practice-marquee">
     <div class="scroll-content">
       {%- assign practice_posts = site.posts | where_exp: "post", "post.categories contains '練習' or post.categories == '練習'" -%}
