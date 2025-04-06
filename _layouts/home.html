@@ -10,7 +10,7 @@ layout: default
   <!-- 練習カテゴリ記事を横スクロールで表示 -->
   <div class="practice-marquee">
     <div class="scroll-content">
-      {%- assign practice_posts = site.posts | where_exp: "post", "post.categories contains '練習'" -%}
+      {%- assign practice_posts = site.posts | where_exp: "post", "post.categories contains '練習' or post.categories == '練習'" -%}
       {%- for post in practice_posts -%}
         <a class="practice-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
         &nbsp;&nbsp;／&nbsp;&nbsp;
@@ -27,7 +27,7 @@ layout: default
       {%- assign excluded_ids = filtered_posts | map: "id" -%}
       {%- assign visible_posts = site.posts | reject: "id", excluded_ids -%}
 
-      {%- for post in filtered_posts -%}
+      {%- for post in visible_posts -%}  <!-- ← ここを変更 -->
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">
