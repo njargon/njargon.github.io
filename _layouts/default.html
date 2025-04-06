@@ -7,18 +7,6 @@
 
     {%- include header.html -%}
 
-    <div class="all-categories">
-      <h3 class="all-categories-heading">カテゴリ一覧</h3>
-      <div class="category-links">
-        {%- assign sorted_categories = site.categories | sort %}
-        {%- for category in sorted_categories -%}
-          <a class="category-badge" href="/category/{{ category[0] | uri_escape }}/">
-            {{ category[0] }}
-          </a>
-        {%- endfor -%}
-      </div>
-    </div>
-
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         {{ content }}
