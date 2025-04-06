@@ -182,3 +182,11 @@ main.page-content > div.wrapper > article.post > div.post-content {
   text-align: center;
   margin-top: 0.5rem;
 }
+
+.post-excerpt {
+  font-size: 0.9rem;  /* ← 小さめに調整（例：0.9rem） */
+  color: #555;        /* ← 読みやすく落ち着いた色 */
+  line-height: 1.4;
+  margin-top: 0.3rem;
+  margin-bottom: 1.5rem;
+}
