@@ -9,12 +9,12 @@
 
 body {
   font-family: 'Shippori Mincho', serif;
-  background-color: #000000;
+  background-color: #fefefe;
 }
 
 .post h1.post-title {
   font-size: 1.8rem;
-  color: rgb(255, 255, 255);
+  color: black;
   text-align: center;
 }
 
@@ -114,15 +114,9 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .site-description {
   text-align: center;
   font-size: 1rem;
-  color: #8d8d8d;
+  color: #cfcfcf;
   margin-top: 0;
   margin-bottom: 2rem;
-}
-
-.site-header {
-  background-color: #e2f3e8; /* ← 好きな色に変えてOK！ */
-  padding: 1rem 0;
-  border-bottom: 1px solid #adc0b3; /* 薄い下線もおすすめ */
 }
 
 .site-header .wrapper {
@@ -137,7 +131,6 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .site-title {
   font-size: 1.3rem;
   font-weight: bold;
-  color: #ffffff ;
   margin: 0;
   text-decoration: none;
   color: inherit;
@@ -146,7 +139,7 @@ main.page-content > div.wrapper > article.post > div.post-content {
 
 .header-description {
   font-size: 0.8rem;
-  color: #858585;
+  color: #c7c7c7;
   margin-top: 0rem; 
   margin: 0;
   line-height: 2; /* 行の高さを調整 */
@@ -247,3 +240,8 @@ main.page-content > div.wrapper > article.post > div.post-content {
   border-top: 1px solid #ddd; /* 薄いグレーの線 */
 }
 
+.site-header {
+  background-color: #f8f8f8; /* ← 好きな色に変えてOK！ */
+  padding: 1rem 0;
+  border-bottom: 1px solid #e0e0e0; /* 薄い下線もおすすめ */
+}
