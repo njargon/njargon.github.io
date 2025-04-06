@@ -28,6 +28,7 @@ twitter_username: jekyll
 github_username: jekyll
 
 show_excerpts: true
+future: true
 
 # Build settings
 

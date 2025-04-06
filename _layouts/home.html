@@ -23,7 +23,10 @@ layout: default
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- assign filtered_posts = site.posts | reject: "categories", "練習" -%}
+      {%- assign filtered_posts = site.posts | where_exp: "post", "post.categories contains '練習' " | reverse -%}
+      {%- assign excluded_ids = filtered_posts | map: "id" -%}
+      {%- assign visible_posts = site.posts | reject: "id", excluded_ids -%}
+
       {%- for post in filtered_posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
