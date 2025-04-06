@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Shippori Mincho', serif;
-  background-color: #fefefe;
+  background-color: #000000;
 }
 
 .post h1.post-title {
@@ -137,6 +137,7 @@ main.page-content > div.wrapper > article.post > div.post-content {
 .site-title {
   font-size: 1.3rem;
   font-weight: bold;
+  color: #ffffff
   margin: 0;
   text-decoration: none;
   color: inherit;
@@ -145,7 +146,7 @@ main.page-content > div.wrapper > article.post > div.post-content {
 
 .header-description {
   font-size: 0.8rem;
-  color: #c7c7c7;
+  color: #858585;
   margin-top: 0rem; 
   margin: 0;
   line-height: 2; /* 行の高さを調整 */
