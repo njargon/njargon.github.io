@@ -245,3 +245,13 @@ main.page-content > div.wrapper > article.post > div.post-content {
   box-shadow: none !important;
   background-color: white;  // ← 好きな色に
 }
+
+.post-content blockquote {
+  border-left: 4px solid #336699;   /* 左のラインを青系に */
+  background-color: #f7faff;        /* 背景色を淡い水色に */
+  color: #333;                      /* 文字色は濃いグレーで読みやすく */
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-style: normal;
+  border-radius: 0.25rem;
+}
