@@ -30,6 +30,7 @@ github_username: jekyll
 show_excerpts: true
 future: true
 
+
 # Build settings
 
 plugins:
@@ -37,3 +38,6 @@ plugins:
 
 sass:
   style: compressed
+
+include:
+  - _posts/attachments
