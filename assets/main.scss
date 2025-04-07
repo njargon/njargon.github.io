@@ -364,7 +364,7 @@ mark {
 }
 
 .obsidian-img {
-  max-width: 35%;
+  max-width: 35% !important;
   height: auto;
   display: block;
   margin: 1em auto;
@@ -373,6 +373,6 @@ mark {
 /* スマホ表示のときは画像を100%に */
 @media screen and (max-width: 768px) {
   .obsidian-img {
-    max-width: 100%;
+    max-width: 100% !important;
   }
 }
