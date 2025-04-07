@@ -364,15 +364,15 @@ mark {
 }
 
 .obsidian-img {
-  max-width: 35% !important;
+  max-width: 35%;
   height: auto;
   display: block;
   margin: 1em auto;
 }
 
 /* スマホ表示のときは画像を100%に */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
   .obsidian-img {
-    max-width: 100% !important;
+    max-width: 100%;
   }
 }
