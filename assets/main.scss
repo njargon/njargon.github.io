@@ -369,3 +369,10 @@ mark {
   display: block;
   margin: 1em auto;
 }
+
+/* スマホ表示のときは画像を100%に */
+@media screen and (max-width: 768px) {
+  .obsidian-img {
+    max-width: 100%;
+  }
+}
