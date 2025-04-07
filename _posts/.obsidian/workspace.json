@@ -228,8 +228,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-file",
+              "title": "アクティブでなくなったプラグイン"
             }
           }
         ],
@@ -246,9 +246,7 @@
       "canvas:新規キャンバスを作成": false,
       "daily-notes:今日のデイリーノートを開く": false,
       "templates:テンプレートを挿入": false,
-      "command-palette:コマンドパレットを開く": false,
-      "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false
+      "command-palette:コマンドパレットを開く": false
     }
   },
   "active": "336e4196e16359ac",
