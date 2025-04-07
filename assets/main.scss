@@ -339,7 +339,6 @@ mark {
   align-items: center;
   background: #f0f0f0;
   padding: 0.5rem;
-  border-radius: 1rem;
   font-size: 0.9rem;
   color: #336699;
   text-decoration: none;
@@ -356,11 +355,17 @@ mark {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 0.75rem;
   margin-bottom: 0.4rem;
 }
 
 .practice-date {
   font-size: 0.75rem;
   color: #777;
+}
+
+.obsidian-img {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
 }
