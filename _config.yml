@@ -40,4 +40,4 @@ sass:
   style: compressed
 
 include:
-  - _posts/attachments
+  - _posts/attachment
