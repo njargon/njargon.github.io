@@ -5,16 +5,18 @@ layout: default
 <div class="post-page">
 
   <!-- スクロール追従目次 -->
-  <div id="ui-toc-affix" class="ui-affix-toc">
+  <div id="ui-toc-affix">
+    <div class="toc-title">{{ page.title }}</div>  <!-- これが記事タイトル -->
     <div class="toc">
-      <!-- JavaScript でここに目次が生成されます -->
+      <!-- JSがここにul.navを生成 -->
     </div>
     <div class="toc-menu">
-      <a class="expand-toggle" href="#">全部見る</a>
-      <a class="back-to-top" href="#">トップへ戻る</a>
-      <a class="go-to-bottom" href="#">底へ移る</a>
+      <a href="#">全部見る</a>
+      <a href="#">トップへ戻る</a>
+      <a href="#">底へ移る</a>
     </div>
   </div>
+  
 
   <!-- 記事本体 -->
   <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">

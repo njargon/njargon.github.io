@@ -451,3 +451,15 @@ mark {
     display: none;
   }
 }
+
+/* トップのタイトル表示 */
+#ui-toc-affix .toc-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #212529;
+  margin-bottom: 1em;
+  padding-left: 10px;
+  border-left: 3px solid #333;
+  line-height: 1.4;
+}
+
