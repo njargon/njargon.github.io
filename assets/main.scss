@@ -376,3 +376,60 @@ mark {
     max-width: 100%;
   }
 }
+
+
+/* 目次 */
+.ui-affix-toc {
+  position: fixed;
+  top: 160px;
+  left: 20px;
+  width: 200px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1em;
+  font-size: 0.85rem;
+  z-index: 100;
+}
+
+.ui-affix-toc .toc-menu {
+  margin-top: 1em;
+  font-size: 0.75rem;
+}
+
+.ui-affix-toc .toc a {
+  color: #336699;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.3em;
+}
+
+.ui-affix-toc .toc .nav ul {
+  padding-left: 1em;
+}
+
+.post-page {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.post-page article.post {
+  flex-grow: 1;
+}
+
+.post-page {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+#ui-toc-affix {
+  position: fixed;
+  top: 160px;
+  left: 20px;
+  width: 200px;
+}
