@@ -383,33 +383,74 @@ mark {
   position: fixed;
   top: 160px;
   left: 20px;
-  width: 200px;
+  width: 220px;
   max-height: 80vh;
   overflow-y: auto;
-  background: #fdfdfd;
+  background-color: #f9f9f9;
   border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 1em;
-  font-size: 0.85rem;
-  z-index: 100;
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+/* 見出しリスト（ul.nav）全体 */
+.ui-affix-toc .toc .nav {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* 各リスト要素 */
+.ui-affix-toc .toc .nav li {
+  margin-bottom: 0.5rem;
+}
+
+/* ネストされた見出し（h2, h3...）のインデント */
+.ui-affix-toc .toc .nav ul {
+  padding-left: 1em;
+  margin-top: 0.3em;
+}
+
+/* リンクスタイル */
+.ui-affix-toc .toc a {
+  color: #336699;
+  text-decoration: none;
+  display: block;
+}
+
+/* ホバー時 */
+.ui-affix-toc .toc a:hover {
+  text-decoration: underline;
+}
+
+/* 現在位置の見出し強調 */
+.ui-affix-toc .toc li.active > a {
+  font-weight: bold;
+  color: #000;
+}
+
+/* 目次下のメニューリンク */
 .ui-affix-toc .toc-menu {
   margin-top: 1em;
   font-size: 0.75rem;
 }
 
-.ui-affix-toc .toc a {
-  color: #336699;
+.ui-affix-toc .toc-menu a {
+  display: inline-block;
+  margin-right: 0.5em;
+  color: #888;
   text-decoration: none;
-  display: block;
-  margin-bottom: 0.3em;
+  font-size: 0.75rem;
 }
 
-.ui-affix-toc .toc .nav ul {
-  padding-left: 1em;
+.ui-affix-toc .toc-menu a:hover {
+  text-decoration: underline;
 }
 
+/* 記事本体との2カラム表示 */
 .post-page {
   display: flex;
   flex-direction: row;
@@ -420,16 +461,9 @@ mark {
   flex-grow: 1;
 }
 
-.post-page {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  gap: 2rem;
-}
-
-#ui-toc-affix {
-  position: fixed;
-  top: 160px;
-  left: 20px;
-  width: 200px;
+/* スマホでは目次を非表示に */
+@media screen and (max-width: 768px) {
+  .ui-affix-toc {
+    display: none;
+  }
 }
