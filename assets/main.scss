@@ -171,6 +171,15 @@ body {
   text-decoration: none;
 }
 
+.article-title:visited{
+  flex-grow: 1;
+  font-size: 1.1rem;
+  color: #e84242;
+  text-decoration: none;
+}
+
+
+
 .article-title:hover {
   text-decoration: underline;
 }
