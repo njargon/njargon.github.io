@@ -1,14 +1,8 @@
 ---
-layout: page
+layout: about
 title: About
 permalink: /about/
 ---
-
-<nav class="top-nav">
-  <a class="top-nav-link" href="/about">about</a>
-  <a class="top-nav-link" href="/articles">articles</a>
-  <a class="top-nav-link" href="/gallery">gallery</a>
-</nav>
 
 <h1 class="category-heading">About</h1>
 
