@@ -4,12 +4,6 @@ title: Articles
 permalink: /articles/
 ---
 
-<nav class="top-nav">
-  <a class="top-nav-link" href="/about">about</a>
-  <a class="top-nav-link" href="/articles">articles</a>
-  <a class="top-nav-link" href="/illustrations">illustrations</a>
-</nav>
-
 <h1 class="category-heading">Articles</h1>
 
 <!-- カテゴリ一覧 -->
