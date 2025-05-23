@@ -4,8 +4,9 @@
 @import "minima";  // ✅ ←インデントなし
 
 @font-face {
-  font-family: 'NotoSymbols';
-  src: url('/assets/fonts/NotoSansSymbols2-Regular.ttf') format('truetype');
+  font-family: 'FreeSerif';
+  src: url('/assets/fonts/FreeSerif.ttf') format('truetype');
+  font-display: swap;
 }
 
 body {
@@ -616,7 +617,7 @@ body {
 }
 
 .bracketed {
-  font-family: 'NotoSymbols', sans-serif;
+  font-family: 'FreeSerif', serif;
 }
 
 .home {
