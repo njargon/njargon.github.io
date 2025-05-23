@@ -3,6 +3,11 @@
 
 @import "minima";  // ✅ ←インデントなし
 
+@font-face {
+  font-family: 'NotoSymbols';
+  src: url('/assets/fonts/NotoSansSymbols2-Regular.ttf') format('truetype');
+}
+
 body {
    font-family: 'Shippori Mincho', serif;
    background-color: #fefefe;
@@ -608,6 +613,10 @@ body {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.bracketed {
+  font-family: 'NotoSymbols', sans-serif;
 }
 
 .home {
