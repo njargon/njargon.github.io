@@ -7,13 +7,11 @@ permalink: /about/
 <nav class="top-nav">
   <a class="top-nav-link" href="/about">about</a>
   <a class="top-nav-link" href="/articles">articles</a>
-  <a class="top-nav-link" href="/illustrations">illustrations</a>
+  <a class="top-nav-link" href="/gallery">gallery</a>
 </nav>
 
 <h1 class="category-heading">About</h1>
 
-<div class="post-content">
-  
 # はじめに
 
 このページは自己紹介です。
@@ -30,5 +28,4 @@ permalink: /about/
 - 創作キャラの会話劇
 - 音の変化の探求
 
-</div>
 
