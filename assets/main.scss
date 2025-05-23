@@ -85,9 +85,12 @@ body {
   color: #f27f94;
   font-weight: bold;
   transition: color 0.2s;
+  margin-top: 0.3rem;
 }
 
-.top-nav-link
+.top-nav-link:visited {
+  color: #f27f94;   
+}
 
 .top-nav-link:hover {
   color: #f27f94;
