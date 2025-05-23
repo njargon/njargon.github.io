@@ -471,3 +471,12 @@ body {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
+.home-banner {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+}
+
