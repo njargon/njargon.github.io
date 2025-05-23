@@ -5,21 +5,22 @@ permalink: /articles/
 ---
 
 <h1 class="category-heading">記事一覧</h1>
-
 <div class="post-content">
 
-{% assign sorted_posts = site.posts | sort: 'date' | reverse %}
-{% assign grouped_by_category = sorted_posts | group_by: "category" %}
+{% for category in site.categories %}
+  {% assign category_name = category[0] %}
+  {% assign posts_in_category = category[1] %}
+  
+  <h2>{{ category_name }}</h2>
 
-{% for category_group in grouped_by_category %}
-  <h2>{{ category_group.name }}</h2>
+  {% assign sorted = posts_in_category | sort: "date" | reverse %}
+  {% assign current_ym = "" %}
 
-  {% assign current_year_month = "" %}
-  {% for post in category_group.items %}
-    {% assign post_ym = post.date | date: "%Y-%m" %}
-    {% if post_ym != current_year_month %}
-      {% assign current_year_month = post_ym %}
-      <h3>{{ post.date | date: "%Y年%m月" }}</h3>
+  {% for post in sorted %}
+    {% assign post_ym = post.date | date: "%Y年%m月" %}
+    {% if post_ym != current_ym %}
+      {% assign current_ym = post_ym %}
+      <h3>{{ current_ym }}</h3>
     {% endif %}
 
     <ul>
@@ -29,6 +30,7 @@ permalink: /articles/
       </li>
     </ul>
   {% endfor %}
+
 {% endfor %}
 
 </div>
