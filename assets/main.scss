@@ -1,10 +1,9 @@
-
 ---
 ---
 
- @import "minima";  // Minima テーマのベースCSSを読み込む
+@import "minima";  // ✅ ←インデントなし
 
- body {
+body {
    font-family: 'Shippori Mincho', serif;
    background-color: #fefefe;
  }
