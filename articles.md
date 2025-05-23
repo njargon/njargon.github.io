@@ -4,7 +4,7 @@ title: Articles
 permalink: /articles/
 ---
 
-# Articles
+<h1 class="category-heading">Articles</h1>
 
 ここに記事一覧や説明文を載せます。
 
