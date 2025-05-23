@@ -4,8 +4,8 @@
 @import "minima";  // ✅ ←インデントなし
 
 @font-face {
-  font-family: 'FreeSerif';
-  src: url('/assets/fonts/FreeSerif.woff2') format('woff2');
+  font-family: 'UnifontBMP';
+  src: url('/assets/fonts/unifont-15.0.06.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -619,7 +619,7 @@ body {
 }
 
 .bracketed {
-  font-family: 'FreeSerif', serif;
+  font-family: 'UnifontBMP', serif;
 }
 
 .home {
