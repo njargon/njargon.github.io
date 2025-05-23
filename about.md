@@ -18,8 +18,7 @@ permalink: /about/
 ## 管理人について
 
 - 袖水です。
-	- so⸢demizu de⸣su
-	- <span class="bracketed">⸢例⸣</span>
+	- so\[demizu de]su
 - 基本的には絵を投稿する人です。
 	- 絵が上手くなりたい！楽しく描きたい！の二本軸を今は目標にしています。
 - 言語のお話をしたくなる時があります。
