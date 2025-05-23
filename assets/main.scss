@@ -478,39 +478,41 @@ body {
 
 @media screen and (max-width: 600px) {
   body {
-    font-size: 15px;
+    font-size: 14px; /* ← 通常より小さめに */
   }
 
   .post-content {
-    font-size: 15px;
-  }
-
-  .post-content h1 {
-    font-size: 1.5rem;
+    font-size: 14px; /* オーバーライド用に念のため */
   }
 
   .post-content h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 
   .post-content h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
-  .post-content p {
+  .post-content h4 {
     font-size: 0.95rem;
+  }
+
+  .post-meta,
+  .practice-date {
+    font-size: 12px;
   }
 }
 
+
 @media screen and (max-width: 600px) {
   .post-content {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .wrapper {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 
