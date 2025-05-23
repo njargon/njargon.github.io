@@ -4,9 +4,8 @@ title: About
 permalink: /about/
 ---
 
-<h1 class="category-heading">About</h1>
 
-# はじめに
+## About
 
 このページは自己紹介です。
 
