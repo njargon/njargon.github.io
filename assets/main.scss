@@ -5,7 +5,9 @@
 
 @font-face {
   font-family: 'FreeSerif';
-  src: url('/assets/fonts/FreeSerif.ttf') format('truetype');
+  src: url('/assets/fonts/FreeSerif.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 
