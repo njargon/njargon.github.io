@@ -4,33 +4,20 @@ title: Articles
 permalink: /articles/
 ---
 
-<h1 class="category-heading">記事一覧</h1>
-<div class="post-content">
+<h1 class="category-heading">Articles</h1>
 
-{% for category in site.categories %}
-  {% assign category_name = category[0] %}
-  {% assign posts_in_category = category[1] %}
-  
-  <h2>{{ category_name }}</h2>
-
-  {% assign sorted = posts_in_category | sort: "date" | reverse %}
-  {% assign current_ym = "" %}
-
-  {% for post in sorted %}
-    {% assign post_ym = post.date | date: "%Y年%m月" %}
-    {% if post_ym != current_ym %}
-      {% assign current_ym = post_ym %}
-      <h3>{{ current_ym }}</h3>
-    {% endif %}
-
-    <ul>
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span style="font-size: 0.85em; color: #888;">（{{ post.date | date: "%Y-%m-%d" }}）</span>
-      </li>
-    </ul>
+<ul class="article-list">
+  {% assign date_format = "%Y-%m-%d" %}
+  {% for post in site.posts %}
+    <li class="article-item">
+      <span class="article-date">{{ post.date | date: date_format }}</span>
+      <a class="article-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <span class="article-category">
+        {% for category in post.categories %}
+          <span class="badge">{{ category }}</span>
+        {% endfor %}
+      </span>
+    </li>
   {% endfor %}
+</ul>
 
-{% endfor %}
-
-</div>
