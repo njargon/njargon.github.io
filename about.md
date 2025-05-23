@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-<h1 class="category-heading">About</h1>
+<nav class="top-nav">
+  <a class="top-nav-link" href="/about">about</a>
+  <a class="top-nav-link" href="/articles">articles</a>
+  <a class="top-nav-link" href="/illustrations">illustrations</a>
+</nav>
 
----
-layout: default
-title: About
----
+<h1 class="category-heading">About</h1>
 
 <div class="post-content">
   
