@@ -232,25 +232,19 @@ body {
   justify-content: flex-start;
 }
 
-/* 落書きカテゴリ：グリッドレイアウト */
+/* 落書きカテゴリグリッド */
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 1rem;
-  margin-bottom: 3rem;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));  /* ← 小さめ */
+  gap: 0.7rem;
+  margin-bottom: 2rem;
 }
 
-/* 角の尖ったラッパー */
 .portfolio-thumb-wrapper {
   display: block;
   overflow: hidden;
-  border: 2px solid #ccc;
-  border-radius: 0;  /* 角は尖らせる */
-  transition: border-color 0.3s;
-}
-
-.portfolio-thumb-wrapper:hover {
-  border-color: #e84242;
+  border: 1px solid #ccc;
+  border-radius: 0; /* 角を尖らせる */
 }
 
 .portfolio-thumb {
@@ -259,6 +253,37 @@ body {
   aspect-ratio: 4 / 3;
   object-fit: cover;
   display: block;
+}
+
+/* 画像全体を表示する設定 */
+.portfolio-thumb.full-fit {
+  object-fit: contain; /* ← cover → contain に変更 */
+  background-color: #f9f9f9;
+}
+
+/* 練習カテゴリの本文（サムネイルなし）表示調整 */
+.article-info.horizontal {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.article-info.horizontal .article-date {
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.article-info.horizontal .article-title {
+  flex-grow: 1;
+  font-size: 1.1rem;
+  color: #e84242;
+  text-decoration: none;
+}
+
+
+.portfolio-thumb-wrapper:hover {
+  border-color: #e84242;
 }
 
 .section-heading {

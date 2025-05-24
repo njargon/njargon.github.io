@@ -6,13 +6,15 @@ permalink: /drawings/
 
 <h1 class="category-heading">Drawings</h1>
 
-<!-- 落書きカテゴリ：ポートフォリオ風グリッド -->
+<h2 class="section-heading">落書きのきじ</h2>
+
+<!-- 落書きカテゴリ：グリッドで敷き詰め（画像全体表示） -->
 <div class="portfolio-grid">
   {% for post in site.posts %}
     {% if post.categories contains "落書き" %}
       {% if post.thumbnail %}
         <a href="{{ post.url | relative_url }}" class="portfolio-thumb-wrapper">
-          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="portfolio-thumb">
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="portfolio-thumb full-fit">
         </a>
       {% endif %}
     {% endif %}
@@ -32,14 +34,10 @@ permalink: /drawings/
           <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="practice-thumb">
         </div>
       {% endif %}
-
-      <div class="article-info">
+      <div class="article-info horizontal">
         <span class="article-date">{{ post.date | date: date_format }}</span>
         <a class="article-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <!-- カテゴリバッジ表示なし -->
       </div>
     </li>
   {% endfor %}
 </ul>
-
-
