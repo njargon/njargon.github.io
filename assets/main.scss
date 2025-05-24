@@ -76,7 +76,7 @@ body {
 .top-nav {
   display: flex;
   justify-content: space-between;
-  gap: 0.5rem;
+  position: relative;
   margin-top: 0.8rem;
   margin-bottom: 1.5rem;
 }
