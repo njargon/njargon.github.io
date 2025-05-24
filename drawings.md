@@ -48,16 +48,18 @@ permalink: /drawings/
   {% assign practice_posts = site.posts | where_exp: "post", "post.categories contains '練習'" %}
   {% assign first_practice = practice_posts[0] %}
   {% for post in practice_posts %}
-    <li class="article-item">
-      {% if post == first_practice and post.thumbnail %}
+    {% assign is_first = post == first_practice and post.thumbnail %}
+    <li class="article-item {% unless is_first %}no-thumbnail{% endunless %}">
+        {% if is_first %}
         <div class="thumbnail-wrapper">
-          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="practice-thumb">
+            <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="practice-thumb">
         </div>
-      {% endif %}
-      <div class="article-info horizontal">
+        {% endif %}
+        <div class="article-info horizontal">
         <span class="article-date">{{ post.date | date: date_format }}</span>
         <a class="article-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-      </div>
+        </div>
     </li>
   {% endfor %}
+
 </ul>

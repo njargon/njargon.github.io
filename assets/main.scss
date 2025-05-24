@@ -286,6 +286,27 @@ body {
   line-height: 1.4;
 }
 
+/* 通常（サムネあり）の記事 */
+.article-item {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+/* サムネなし（2件目以降） */
+.article-item.no-thumbnail {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+.article-item.no-thumbnail .article-info.horizontal {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 
 
 
