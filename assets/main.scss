@@ -247,7 +247,7 @@ body {
   width: 100%;
   margin-bottom: 1rem;
   border: 1px solid transparent;
-  transition: border-color 0.2s ease;
+  box-sizing: border-box; /* ✅ 揺れ防止 */
 }
 
 .masonry-item:hover {
@@ -256,8 +256,9 @@ body {
 
 .masonry-img {
   width: 100%;
-  display: block;
+  aspect-ratio: 4 / 3;      /* ✅ 高さを強制 */
   object-fit: cover;
+  display: block;
 }
 
 
