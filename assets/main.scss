@@ -76,24 +76,29 @@ body {
 .top-nav {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 4rem; 
+  max-width: 400px;  
+  margin: 1rem auto;  
+  padding: 0 2rem;      
 }
 
 .nav-side {
   flex: 0 0 auto;
   display: flex;
   justify-content: center;
-  padding: 0.3rem 2rem;
 }
 
 .center-link {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  font-weight: bold;
+  color: #e84242;
+  text-decoration: none;
   z-index: 1;
 }
+
 
 
 
