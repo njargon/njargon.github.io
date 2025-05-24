@@ -8,8 +8,6 @@ permalink: /drawings/
 
 <h2 class="section-heading">落書きのきじ</h2>
 
-<h2 class="section-heading">落書きのきじ</h2>
-
 <!-- 上段（1〜2件目） -->
 <div class="portfolio-grid row-one">
   {% assign count = 0 %}
