@@ -4,7 +4,7 @@ title: Texts
 permalink: /texts/
 ---
 
-<h1 class="category-heading">Articles</h1>
+<h1 class="category-heading">Texts</h1>
 
 <ul class="article-list">
   {% assign date_format = "%Y-%m-%d" %}

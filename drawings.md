@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Gallery
-permalink: /gallery/
+title: Drawings
+permalink: /drawings/
 ---
 
-<h1 class="category-heading">Gallery</h1>
+<h1 class="category-heading">Drawings</h1>
 
 ここにイラストやサムネイルギャラリーなどを表示できます。
