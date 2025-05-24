@@ -6,7 +6,7 @@ permalink: /drawings/
 
 <h1 class="category-heading">Drawings</h1>
 
-<h2 class="section-heading">落書きのきじ</h2>
+<h2 class="section-heading">落書き</h2>
 
 <div class="tile-gallery">
   {% for post in site.posts %}
@@ -22,7 +22,7 @@ permalink: /drawings/
 
 
 
-<h2 class="section-heading">練習のきじ</h2>
+<h2 class="section-heading">練習</h2>
 
 <ul class="article-list">
   {% assign date_format = "%Y-%m-%d" %}
