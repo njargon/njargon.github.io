@@ -299,13 +299,33 @@ body {
 /* サムネなし（2件目以降） */
 .article-item.no-thumbnail {
   display: block;
-  margin-bottom: 1.2rem;
+  width: 100%;
 }
+
 .article-item.no-thumbnail .article-info.horizontal {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 0.5rem;
+  margin-top: 0.5rem;
 }
+
+.article-item.no-thumbnail .article-date {
+  font-size: 0.85rem;
+  color: #777;
+  flex-shrink: 0;
+  margin: 0;
+  min-width: 5.5rem;
+}
+
+.article-item.no-thumbnail .article-title {
+  font-size: 1.1rem;
+  color: #e84242;
+  text-decoration: none;
+  flex-grow: 1;
+  margin: 0;
+}
+
 
 
 
