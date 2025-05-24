@@ -11,18 +11,13 @@ permalink: /drawings/
 <div class="masonry-grid">
   {% for post in site.posts %}
     {% if post.categories contains "落書き" and post.thumbnail %}
-      <div class="masonry-item">
-        <a href="{{ post.url | relative_url }}" class="masonry-link">
-          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="masonry-img">
-          <div class="masonry-caption">
-            <span class="masonry-date">{{ post.date | date: "%Y-%m-%d" }}</span><br>
-            <span class="masonry-title">{{ post.title }}</span>
-          </div>
-        </a>
-      </div>
+      <a href="{{ post.url | relative_url }}" class="masonry-item">
+        <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="masonry-img">
+      </a>
     {% endif %}
   {% endfor %}
 </div>
+
 
 
 
