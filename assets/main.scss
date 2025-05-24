@@ -246,12 +246,12 @@ body {
 
 /* 上段（大サイズ） */
 .portfolio-grid.row-one .portfolio-thumb-wrapper {
-  flex: 0 0 250px;
+  flex: 0 0 400px;
 }
 
 /* 下段（小サイズ） */
 .portfolio-grid.row-two .portfolio-thumb-wrapper.small {
-  flex: 0 0 125px;
+  flex: 0 0 200px;
 }
 
 
@@ -277,11 +277,13 @@ body {
   display: flex !important;
   flex-direction: row;
   align-items: baseline;
-  justify-content: center;
+  justify-content: flex-start;     /* ← 左寄せに */
   gap: 0.5rem;
   margin-top: 0.5rem;
+  margin-left: 3rem;               /* ← 全体を右へ寄せる */
   text-align: left;
 }
+
 
 .article-list .article-item .article-date {
   font-size: 0.85rem;
