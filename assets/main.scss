@@ -75,10 +75,17 @@ body {
  /* 横並びのナビゲーション */
 .top-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 2rem;
   margin-top: 0.8rem;
   margin-bottom: 1.5rem;
+}
+
+.center-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
 }
 
 .top-nav-link {
