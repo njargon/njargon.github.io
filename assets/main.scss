@@ -289,7 +289,7 @@ body {
 /* 通常（サムネあり）の記事 */
 .article-item {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   align-items: flex-start;
   gap: 1rem;
   margin-bottom: 1.2rem;
