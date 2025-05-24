@@ -8,15 +8,16 @@ permalink: /drawings/
 
 <h2 class="section-heading">落書きのきじ</h2>
 
-<div class="masonry-grid">
+<div class="tile-gallery">
   {% for post in site.posts %}
     {% if post.categories contains "落書き" and post.thumbnail %}
-      <a href="{{ post.url | relative_url }}" class="masonry-item">
-        <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="masonry-img">
+      <a href="{{ post.url | relative_url }}" class="tile-item">
+        <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="tile-thumb">
       </a>
     {% endif %}
   {% endfor %}
 </div>
+
 
 
 

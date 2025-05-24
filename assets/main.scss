@@ -235,29 +235,30 @@ body {
   justify-content: flex-start;
 }
 
-.masonry-grid {
-  column-count: 3;
-  column-gap: 1rem;
-  padding: 1rem;
+.tile-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
 }
 
-.masonry-item {
-  break-inside: avoid;
-  display: inline-block;
-  width: 100%;
-  margin-bottom: 1rem;
+.tile-item {
+  width: 200px;
+  aspect-ratio: 4 / 3;
   border: 1px solid transparent;
-  box-sizing: border-box; /* ✅ 揺れ防止 */
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-.masonry-item:hover {
+.tile-item:hover {
   border-color: #e84242;
 }
 
-.masonry-img {
+.tile-thumb {
   width: 100%;
-  aspect-ratio: 4 / 3;      /* ✅ 高さを強制 */
+  height: 100%;
   object-fit: cover;
+  object-position: top; 
   display: block;
 }
 
