@@ -261,25 +261,28 @@ body {
   background-color: #f9f9f9;
 }
 
-/* 練習カテゴリの本文（サムネイルなし）表示調整 */
+
 .article-info.horizontal {
   display: flex;
-  align-items: center;
+  align-items: flex-start;  // ← 上端に揃える
   gap: 0.5rem;
+  margin-top: 0.5rem;
 }
 
 .article-info.horizontal .article-date {
-  flex-shrink: 0;
   font-size: 0.85rem;
   color: #777;
+  flex-shrink: 0;
+  margin: 0;
 }
 
 .article-info.horizontal .article-title {
-  flex-grow: 1;
   font-size: 1.1rem;
   color: #e84242;
   text-decoration: none;
+  line-height: 1.4;
 }
+
 
 
 .portfolio-thumb-wrapper:hover {
