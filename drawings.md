@@ -8,35 +8,22 @@ permalink: /drawings/
 
 <h2 class="section-heading">落書きのきじ</h2>
 
-<!-- 上段（1〜2件目） -->
-<div class="portfolio-grid row-one">
-  {% assign count = 0 %}
+<div class="masonry-grid">
   {% for post in site.posts %}
-    {% if post.categories contains "落書き" %}
-      {% assign count = count | plus: 1 %}
-      {% if count <= 2 and post.thumbnail %}
-        <a href="{{ post.url | relative_url }}" class="portfolio-thumb-wrapper">
-          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="portfolio-thumb">
+    {% if post.categories contains "落書き" and post.thumbnail %}
+      <div class="masonry-item">
+        <a href="{{ post.url | relative_url }}" class="masonry-link">
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="masonry-img">
+          <div class="masonry-caption">
+            <span class="masonry-date">{{ post.date | date: "%Y-%m-%d" }}</span><br>
+            <span class="masonry-title">{{ post.title }}</span>
+          </div>
         </a>
-      {% endif %}
+      </div>
     {% endif %}
   {% endfor %}
 </div>
 
-<!-- 下段（3件目以降） -->
-<div class="portfolio-grid row-two">
-  {% assign count = 0 %}
-  {% for post in site.posts %}
-    {% if post.categories contains "落書き" %}
-      {% assign count = count | plus: 1 %}
-      {% if count > 2 and post.thumbnail %}
-        <a href="{{ post.url | relative_url }}" class="portfolio-thumb-wrapper small">
-          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="portfolio-thumb">
-        </a>
-      {% endif %}
-    {% endif %}
-  {% endfor %}
-</div>
 
 
 <h2 class="section-heading">練習のきじ</h2>

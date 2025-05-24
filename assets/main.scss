@@ -235,23 +235,38 @@ body {
   justify-content: flex-start;
 }
 
-/* 落書きカテゴリグリッド */
-.portfolio-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+.masonry-grid {
+  column-count: 3;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+.masonry-item {
+  break-inside: avoid;
   margin-bottom: 1rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
 }
 
-/* 上段（大サイズ） */
-.portfolio-grid.row-one .portfolio-thumb-wrapper {
-  flex: 0 0 400px;
+.masonry-item:hover {
+  transform: scale(1.02);
 }
 
-/* 下段（小サイズ） */
-.portfolio-grid.row-two .portfolio-thumb-wrapper.small {
-  flex: 0 0 200px;
+.masonry-img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.masonry-caption {
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  color: #444;
+  text-align: center;
 }
 
 
@@ -280,7 +295,7 @@ body {
   justify-content: flex-start;     /* ← 左寄せに */
   gap: 0.5rem;
   margin-top: 0.5rem;
-  margin-left: 3rem;               /* ← 全体を右へ寄せる */
+  margin-left: 6rem;               /* ← 全体を右へ寄せる */
   text-align: left;
 }
 
