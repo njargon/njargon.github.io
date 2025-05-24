@@ -276,17 +276,18 @@ body {
 .article-list .article-item .article-info.horizontal {
   display: flex !important;
   flex-direction: row;
-  align-items: baseline; 
+  align-items: baseline;
   justify-content: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
-  text-align: center;
+  text-align: left;
 }
-
 
 .article-list .article-item .article-date {
   font-size: 0.85rem;
   color: #777;
+  width: 6rem;         /* ← 横幅を固定 */
+  text-align: right;   /* ← 中央やや左に寄せたいなら右寄せ */
   flex-shrink: 0;
   margin: 0;
   line-height: 1.2;
@@ -298,7 +299,9 @@ body {
   margin: 0;
   line-height: 1.2;
   text-decoration: none;
+  flex-grow: 1;
 }
+
 
 .article-item {
   display: flex;
