@@ -45,19 +45,15 @@ permalink: /drawings/
   {% assign date_format = "%Y-%m-%d" %}
   {% assign practice_posts = site.posts | where_exp: "post", "post.categories contains '練習'" %}
   {% for post in practice_posts %}
-    <li class="article-item {% unless forloop.first %}no-thumbnail{% endunless %}">
+    <li class="article-item no-thumbnail">
       <div class="article-info horizontal">
         <span class="article-date">{{ post.date | date: date_format }}</span>
         <a class="article-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </div>
-      {% if forloop.first and post.thumbnail %}
-        <div class="thumbnail-wrapper">
-          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="practice-thumb">
-        </div>
-      {% endif %}
     </li>
   {% endfor %}
 </ul>
+
 
 
 
