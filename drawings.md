@@ -8,21 +8,38 @@ permalink: /drawings/
 
 <h2 class="section-heading">落書きのきじ</h2>
 
-<!-- 落書きカテゴリ：グリッドで敷き詰め（画像全体表示） -->
-<div class="portfolio-grid">
+<h2 class="section-heading">落書きのきじ</h2>
+
+<!-- 上段（1〜2件目） -->
+<div class="portfolio-grid row-one">
   {% assign count = 0 %}
   {% for post in site.posts %}
     {% if post.categories contains "落書き" %}
       {% assign count = count | plus: 1 %}
-      {% if post.thumbnail %}
-        <a href="{{ post.url | relative_url }}"
-           class="portfolio-thumb-wrapper {% if count > 2 %}small{% endif %}">
+      {% if count <= 2 and post.thumbnail %}
+        <a href="{{ post.url | relative_url }}" class="portfolio-thumb-wrapper">
           <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="portfolio-thumb">
         </a>
       {% endif %}
     {% endif %}
   {% endfor %}
 </div>
+
+<!-- 下段（3件目以降） -->
+<div class="portfolio-grid row-two">
+  {% assign count = 0 %}
+  {% for post in site.posts %}
+    {% if post.categories contains "落書き" %}
+      {% assign count = count | plus: 1 %}
+      {% if count > 2 and post.thumbnail %}
+        <a href="{{ post.url | relative_url }}" class="portfolio-thumb-wrapper small">
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="portfolio-thumb">
+        </a>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</div>
+
 
 <h2 class="section-heading">練習のきじ</h2>
 
