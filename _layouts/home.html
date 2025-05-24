@@ -21,10 +21,7 @@ layout: default
   <ul class="post-list">
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
     {% for post in site.posts %}
-      {% if post.categories != '練習' %}
-        {% if post.categories contains '練習' %}
-          {% continue %}
-        {% endif %}
+      {% unless post.categories contains '練習' or post.categories contains '落書き' %}
         <li>
           <span class="post-meta">
             {{ post.date | date: date_format }}
@@ -42,7 +39,7 @@ layout: default
           {% endif %}
           <hr class="post-divider">
         </li>
-      {% endif %}
+      {% endunless %}
     {% endfor %}
   </ul>
 {%- endif -%}
