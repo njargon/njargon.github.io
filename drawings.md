@@ -10,11 +10,14 @@ permalink: /drawings/
 
 <!-- 落書きカテゴリ：グリッドで敷き詰め（画像全体表示） -->
 <div class="portfolio-grid">
+  {% assign count = 0 %}
   {% for post in site.posts %}
     {% if post.categories contains "落書き" %}
+      {% assign count = count | plus: 1 %}
       {% if post.thumbnail %}
-        <a href="{{ post.url | relative_url }}" class="portfolio-thumb-wrapper">
-          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="portfolio-thumb full-fit">
+        <a href="{{ post.url | relative_url }}"
+           class="portfolio-thumb-wrapper {% if count > 2 %}small{% endif %}">
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }} thumbnail" class="portfolio-thumb">
         </a>
       {% endif %}
     {% endif %}

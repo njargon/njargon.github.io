@@ -234,26 +234,33 @@ body {
 
 /* 落書きカテゴリグリッド */
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .portfolio-thumb-wrapper {
   display: block;
-  overflow: hidden;
   border: 1px solid #ccc;
-  border-radius: 0; /* 角を尖らせる */
+  border-radius: 0;
+  flex: 0 0 160px; /* 大きめサイズ */
+}
+
+.portfolio-thumb-wrapper.small {
+  flex: 0 0 80px; /* 半分サイズ */
 }
 
 .portfolio-thumb {
   width: 100%;
   height: auto;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #f9f9f9;
   display: block;
 }
+
 
 /* 画像全体を表示する設定 */
 .portfolio-thumb.full-fit {
@@ -264,7 +271,7 @@ body {
 
 .article-info.horizontal {
   display: flex;
-  align-items: flex-start;  // ← 上端に揃える
+  align-items: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
 }
@@ -272,8 +279,8 @@ body {
 .article-info.horizontal .article-date {
   font-size: 0.85rem;
   color: #777;
-  flex-shrink: 0;
   margin: 0;
+  flex-shrink: 0;
 }
 
 .article-info.horizontal .article-title {
@@ -282,6 +289,7 @@ body {
   text-decoration: none;
   line-height: 1.4;
 }
+
 
 
 
