@@ -276,31 +276,30 @@ body {
 .article-list .article-item .article-info.horizontal {
   display: flex !important;
   flex-direction: row;
-  align-items: center;
-  justify-content: center; /* ← 中央揃え */
+  align-items: baseline; 
+  justify-content: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
   text-align: center;
 }
 
+
 .article-list .article-item .article-date {
   font-size: 0.85rem;
   color: #777;
   flex-shrink: 0;
-  min-width: auto; /* 固定幅を解除して自然に揃える */
   margin: 0;
+  line-height: 1.2;
 }
 
 .article-list .article-item .article-title {
   font-size: 1.1rem;
   color: #e84242;
-  flex-grow: 0;   /* 左右に広がらない */
   margin: 0;
+  line-height: 1.2;
   text-decoration: none;
 }
 
-
-/* 通常（サムネあり）の記事 */
 .article-item {
   display: flex;
   flex-direction: row;
