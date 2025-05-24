@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Articles
-permalink: /articles/
+title: Texts
+permalink: /texts/
 ---
 
 <h1 class="category-heading">Articles</h1>
