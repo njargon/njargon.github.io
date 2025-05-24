@@ -160,16 +160,19 @@ body {
   flex-wrap: wrap;
 }
 
-.article-date {
+.article-list .article-item .article-date {
   font-size: 0.85rem;
   color: #777;
-  min-width: 6rem;
+  flex-shrink: 0;
+  min-width: 5rem;
+  margin: 0;
 }
 
-.article-title {
-  flex-grow: 1;
+.article-list .article-item .article-title {
   font-size: 1.1rem;
   color: #e84242;
+  flex-grow: 1;
+  margin: 0;
   text-decoration: none;
 }
 
@@ -270,13 +273,14 @@ body {
 
 
 
-.article-info.horizontal {
-  display: flex;     
-  align-items: center;            
+.article-list .article-item .article-info.horizontal {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
   justify-content: flex-start;
   gap: 0.5rem;
   margin-top: 0.5rem;
-  text-align: left;
+  width: 100%;
 }
 
 .article-info.horizontal .article-title {
