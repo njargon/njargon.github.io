@@ -425,6 +425,8 @@ body {
   aspect-ratio: 1 / 1;
   object-fit: cover;
   margin-bottom: 0.4rem;
+  max-width: 200px;
+  height: auto;
 }
 
 .practice-date {
