@@ -75,17 +75,28 @@ body {
  /* 横並びのナビゲーション */
 .top-nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; 
   position: relative;
-  margin-top: 0.8rem;
-  margin-bottom: 1.5rem;
+}
+
+.top-nav-link {
+  padding: 0 0.4rem; 
+  font-size: 1rem;
+  color: #e84242;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .center-link {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  z-index: 1;
+}
+
+.side-spacer {
+  flex: 1;
 }
 
 .top-nav-link {
