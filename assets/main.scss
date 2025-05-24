@@ -72,11 +72,12 @@ body {
    margin-bottom: 2rem;
  }
 
+
  /* 横並びのナビゲーション */
 .top-nav {
   display: flex;
   justify-content: center;
-  position: relative;
+  gap: 2rem;
   margin-top: 0.8rem;
   margin-bottom: 1.5rem;
 }
