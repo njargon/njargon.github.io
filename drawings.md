@@ -4,7 +4,11 @@ title: Drawings
 permalink: /drawings/
 ---
 
-<h1 class="category-heading">Drawings</h1>
+<nav class="top-nav">
+    <a href="/about/" class="top-nav-link">about</a>
+    <a href="/texts/" class="top-nav-link">texts</a> <!-- ← 中央 -->
+    <a href="/drawings/" class="top-nav-link">drawings</a>
+</nav>
 
 <h2 class="section-heading">落書き</h2>
 
