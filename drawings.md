@@ -15,18 +15,22 @@ permalink: /drawings/
 {% assign rakugaki_posts = site.posts | where_exp: "post", "post.categories contains '落書き'" %}
 {% assign latest_updated_rakugaki = rakugaki_posts | sort: "last_modified_at" | reverse | first %}
 
+{% assign rakugaki_posts = site.posts | where_exp: "post", "post.categories contains '落書き'" %}
+{% assign latest_updated_rakugaki = rakugaki_posts | sort: "last_modified_at" | reverse | first %}
+
 <div class="tile-gallery">
   {% for post in rakugaki_posts %}
     {% if post.thumbnail %}
       <a href="{{ post.url | relative_url }}" class="tile-item">
         <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="tile-thumb">
-        {% if post == latest_updated_rakugaki and post.last_modified_at %}
+        {% if post.last_modified_at and post.url == latest_updated_rakugaki.url %}
           <div class="updated-label">更新日：{{ post.last_modified_at | date: "%Y-%m-%d" }}</div>
         {% endif %}
       </a>
     {% endif %}
   {% endfor %}
 </div>
+
 
 <h2 class="section-heading">練習</h2>
 
