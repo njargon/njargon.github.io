@@ -18,7 +18,7 @@ permalink: /drawings/
 <div class="tile-gallery">
   {% for post in rakugaki_posts %}
     {% if post.thumbnail %}
-      <div class="tile-wrapper">
+      <div class="tile-item-wrapper">
         <a href="{{ post.url | relative_url }}" class="tile-item">
           <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="tile-thumb">
         </a>
