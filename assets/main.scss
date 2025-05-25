@@ -235,13 +235,6 @@ body {
   justify-content: flex-start;
 }
 
-.tile-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-}
-
 .tile-item {
   width: 200px;
   aspect-ratio: 4 / 3;
@@ -262,40 +255,27 @@ body {
   display: block;
 }
 
-.portfolio-thumb {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 4 / 3;
-  object-fit: contain;
-  background-color: #f9f9f9;
-  display: block;
-}
 
 .tile-gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
-  margin-bottom: 2rem;
 }
 
-.tile-item-wrapper {
-  width: 180px;
-  text-align: center;
-}
-
-.tile-thumb {
-  width: 100%;
+.tile-item {
+  position: relative;
+  width: 200px;
   aspect-ratio: 4 / 3;
-  object-fit: cover;
-  display: block;
-  border-radius: 0.5rem;
+  overflow: hidden;
 }
+
 
 .updated-label {
-  font-size: 0.75rem;
-  color: #e84242;
   margin-top: 0.3rem;
+  font-size: 0.8rem;
+  color: #e84242;
+  text-align: center;
 }
 
 

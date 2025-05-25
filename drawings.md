@@ -5,9 +5,9 @@ permalink: /drawings/
 ---
 
 <nav class="top-nav">
-    <a href="/about/" class="top-nav-link">about</a>
-    <a href="/texts/" class="top-nav-link">texts</a>
-    <a href="/drawings/" class="top-nav-link">drawings</a>
+  <a href="/about/" class="top-nav-link">about</a>
+  <a href="/texts/" class="top-nav-link">texts</a>
+  <a href="/drawings/" class="top-nav-link">drawings</a>
 </nav>
 
 <h2 class="section-heading">落書き</h2>
@@ -18,11 +18,11 @@ permalink: /drawings/
 <div class="tile-gallery">
   {% for post in rakugaki_posts %}
     {% if post.thumbnail %}
-      <div class="tile-item-wrapper">
-        <a href="{{ post.url | relative_url }}" class="tile-item">
+      <div class="tile-item">
+        <a href="{{ post.url | relative_url }}">
           <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="tile-thumb">
         </a>
-        {% if post == latest_updated_rakugaki and post.last_modified_at %}
+        {% if post.id == latest_updated_rakugaki.id and post.last_modified_at %}
           <div class="updated-label">更新日：{{ post.last_modified_at | date: "%Y-%m-%d" }}</div>
         {% endif %}
       </div>
@@ -44,3 +44,4 @@ permalink: /drawings/
     </li>
   {% endfor %}
 </ul>
+
