@@ -271,6 +271,12 @@ body {
   display: block;
 }
 
+.tile-wrapper {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  width: 200px; /* 適宜調整 */
+}
 
 .updated-label {
   font-size: 0.75rem;
