@@ -271,6 +271,12 @@ body {
   display: block;
 }
 
+.tile-item-wrapper {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .updated-label {
   font-size: 0.75rem;
   color: #e84242;
