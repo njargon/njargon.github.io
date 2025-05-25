@@ -15,9 +15,6 @@ permalink: /drawings/
 {% assign rakugaki_posts = site.posts | where_exp: "post", "post.categories contains '落書き'" %}
 {% assign latest_updated_rakugaki = rakugaki_posts | sort: "last_modified_at" | reverse | first %}
 
-{% assign rakugaki_posts = site.posts | where_exp: "post", "post.categories contains '落書き'" %}
-{% assign latest_updated_rakugaki = rakugaki_posts | sort: "last_modified_at" | reverse | first %}
-
 <div class="tile-gallery">
   {% for post in rakugaki_posts %}
     {% if post.thumbnail %}
