@@ -4,7 +4,11 @@ title: About
 permalink: /about/
 ---
 
-<h1 class="category-heading">About</h1>
+<nav class="top-nav">
+    <a href="/about/" class="top-nav-link">about</a>
+    <a href="/texts/" class="top-nav-link">texts</a> <!-- ← 中央 -->
+    <a href="/drawings/" class="top-nav-link">drawings</a>
+</nav>
 
 ## このサイトについて
 
