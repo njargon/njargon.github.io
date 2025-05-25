@@ -262,8 +262,6 @@ body {
   display: block;
 }
 
-
-
 .portfolio-thumb {
   width: 100%;
   height: auto;
@@ -271,6 +269,13 @@ body {
   object-fit: contain;
   background-color: #f9f9f9;
   display: block;
+}
+
+.updated-label {
+  font-size: 0.75rem;
+  color: #e84242;
+  text-align: center;
+  margin-top: 0.3rem;
 }
 
 
