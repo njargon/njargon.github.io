@@ -22,7 +22,7 @@ permalink: /drawings/
         <a href="{{ post.url | relative_url }}" class="tile-item">
           <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="tile-thumb">
         </a>
-        {% if post.last_modified_at and post.url == latest_updated_rakugaki.url %}
+        {% if post == latest_updated_rakugaki and post.last_modified_at %}
           <div class="updated-label">更新日：{{ post.last_modified_at | date: "%Y-%m-%d" }}</div>
         {% endif %}
       </div>
