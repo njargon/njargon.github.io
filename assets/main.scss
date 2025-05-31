@@ -464,8 +464,16 @@ body {
    width: 33%;
    margin: 1.5rem auto;
    border: none;
-   border-top: 1px solid #e84242;
+   border-top: 1px solid #ddd;
  }
+
+ .post-content hr {
+  width: 33%;
+  margin: 1.5rem auto;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
  
  .post-content blockquote {
    border-left: 2px solid #6e9fd1;
