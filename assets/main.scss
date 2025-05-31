@@ -12,6 +12,9 @@ body {
  .post-content p {
   text-align: justify;
   text-justify: inter-ideograph;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: normal;
   text-indent: 1.5em; 
   margin-top: 0.5em;
   margin-bottom: 1em;
@@ -719,6 +722,11 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .post-content p {
+    text-align: left;
+  }
+}
 
 
 /* ====================================
