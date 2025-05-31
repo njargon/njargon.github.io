@@ -10,16 +10,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
   headings.forEach((h, i) => {
     if (!h.id) {
-      // スラッグを作る（記号除去＆英字から始める）
       const rawText = h.textContent.trim();
       let slug = rawText.replace(/\s+/g, "-").replace(/[^a-zA-Z0-9\-_]/g, "");
       if (/^[0-9]/.test(slug)) {
-        slug = "sec-" + slug;  // ← 数字始まりならプレフィックスをつける
+        slug = "sec-" + slug;
       }
-      h.id = slug || `heading-${i}`;  // ← 空のときはフォールバック
+      h.id = slug || `heading-${i}`;
     }
 
     const li = document.createElement("li");
+    
+    // h1, h2, h3に応じたクラスをliに付加（例: toc-h2）
+    const tagName = h.tagName.toLowerCase(); // 例: 'h2'
+    li.classList.add(`toc-${tagName}`);
+
     li.innerHTML = `<a href="#${h.id}" title="${h.textContent}">${h.textContent}</a>`;
     ul.appendChild(li);
   });
@@ -40,3 +44,4 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+

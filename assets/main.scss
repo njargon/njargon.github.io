@@ -669,6 +669,26 @@ body {
   padding-left: 20px;
 }
 
+.toc-h2 a {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: 0;
+  color: #222;
+  display: block;
+  padding: 0.2em 0;
+}
+
+/* 目次内の h3 スタイル（インデント・色などで変化） */
+.toc-h3 a {
+  font-weight: normal;
+  font-size: 0.9rem;
+  margin-left: 1em;
+  color: #666;
+  display: block;
+  padding: 0.2em 0;
+}
+
+
 
 /* ====================================
  * 7. レスポンシブ対応
