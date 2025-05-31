@@ -404,6 +404,8 @@ body {
  .post .post-content h3 {
    font-size: 1.2rem !important;
    color: #e84242 !important;
+   border-left: 2px solid #e84242;
+   padding-left: 0.5rem;
  }
  
  .post-meta {
@@ -468,7 +470,7 @@ body {
    border-left: 2px solid #6e9fd1;
    color: #6e9fd1;
    padding: 1rem;
-   margin: 1.5rem 0;
+   margin: 0.8rem 0;
    font-size: 1rem;
    font-style: normal;
  }
