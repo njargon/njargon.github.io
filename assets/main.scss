@@ -373,11 +373,12 @@ body {
    margin-bottom: 30px;
  }
 
-.post-content p,
-.post-content ul,
-.post-content ol {
-  margin-bottom: 1.7em; 
+.post-content > p,
+.post-content > ul,
+.post-content > ol {
+  margin-bottom: 1.7em;
 }
+
  
  .post-content h2 {
    font-size: 1.4rem;
