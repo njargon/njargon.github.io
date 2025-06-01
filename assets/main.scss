@@ -494,17 +494,23 @@ body {
   * 4. リスト・装飾・アイコン・マーク
   * ==================================== */
  
-/* 箇条書きの上下マージンを削除 */
+
 .post-content ul,
 .post-content ol {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0;     
-  margin-left: 0;
+  margin-left: 1.5em;    
+  padding-left: 0;      
   position: relative;
-  list-style: none; 
+  list-style: none;     
 }
-/* 段落とリストの間には余白をつける */
+
+.post-content ul ul,
+.post-content ol ol {
+  margin-left: 2.5em; 
+}
+
+
 .post-content p + ul,
 .post-content p + ol,
 .post-content ul + p,
