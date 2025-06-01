@@ -709,7 +709,22 @@ body {
   margin: 1em auto;
 }
 
-/* --- モバイル（〜600px）向け --- */
+@media screen and (max-width: 800px) {
+  .post-title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .post-title {
+    font-size: 1.5rem;
+  }
+
+  #ui-toc-affix {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 600px) {
   body {
     font-size: 15px;
@@ -742,24 +757,7 @@ body {
   .practice-date {
     font-size: 13px;
   }
-
-  .obsidian-img {
-    max-width: 100%;
-  }
 }
-
-/* --- タブレット以下（〜768px）でTOC非表示とh1調整 --- */
-@media screen and (max-width: 768px) {
-  #ui-toc-affix {
-    display: none;
-  }
-
-  .post-title {
-    font-size: 1.5rem;
-  }
-}
-
-
 
 
 
