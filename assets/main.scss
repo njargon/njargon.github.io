@@ -342,6 +342,11 @@ body {
   * 3. 投稿・記事関連のスタイル
   * ==================================== */
  
+.post-header {
+  margin-bottom: 0.5rem; 
+}
+
+
  .post h1.post-title {
    font-size: 1.8rem;
    color: black;
@@ -367,6 +372,12 @@ body {
  .post-content {
    margin-bottom: 30px;
  }
+
+.post-content p,
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.7em; /* 段落と同じ下余白 */
+}
  
  .post-content h2 {
    font-size: 1.4rem;
