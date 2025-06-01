@@ -499,6 +499,7 @@ body {
 .post-content ol {
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 1.3rem
   position: relative;
   list-style: none; 
 }
@@ -527,7 +528,7 @@ body {
    content: "";
    position: absolute;
    top: 0.65em;
-   left: -0.6rem;
+   left: -0.7rem;
    width: 0.35rem;
    height: 0.35rem;
    aspect-ratio: 1 / 1;
@@ -540,7 +541,7 @@ body {
    content: "";
    position: absolute;
    top: 0.65em;
-   left: -0.45rem;
+   left: -0.55rem;
    width: 1px;
    height: calc(100% + 0.5rem);
    background-color: #dbdbdb;
