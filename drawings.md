@@ -29,7 +29,7 @@ permalink: /drawings/
     {% endif %}
   {% endfor %}
 </div>
-s
+
 
 <h2 class="section-heading">練習</h2>
 
