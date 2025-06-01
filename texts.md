@@ -10,6 +10,7 @@ permalink: /texts/
     <a href="/drawings/" class="top-nav-link">drawings</a>
 </nav>
 
+<h2 class="section-heading">きじの一覧</h2>
 
 {%- if site.posts.size > 0 -%}
 <ul class="post-list">
