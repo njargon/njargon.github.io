@@ -492,9 +492,14 @@ body {
    list-style: none;
    margin: 0;
    padding-left: 1rem;
+   margin-bottom: 1.5rem;
    position: relative;
  }
  
+ .post-content ol {
+  margin-bottom: 1.5rem;
+}
+
  .post-content ul li {
    position: relative;
    padding-left: 0.5rem;
