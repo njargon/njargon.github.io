@@ -376,7 +376,7 @@ body {
 .post-content p,
 .post-content ul,
 .post-content ol {
-  margin-bottom: 1.7em; /* 段落と同じ下余白 */
+  margin-bottom: 1.7em; 
 }
  
  .post-content h2 {
@@ -386,6 +386,11 @@ body {
    position: relative;
    margin-top: 3rem;
  }
+
+ .post-content h2:first-of-type {
+  margin-top: 0.5rem;
+}
+
  
  .post-content h2::before {
    content: "";
