@@ -339,24 +339,11 @@ body {
 }
 
 .section-heading {
-  font-size: 1.4rem;
-  color: #e84242;
-  padding-left: 1rem;
-  position: relative;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  margin: 2rem 0 1rem;
+  text-align: center;
+  color: #444;
 }
-
-.section-heading::before {
-  content: "";
-  position: absolute;
-  top: 0.1em;
-  left: 0;
-  width: 4px;
-  height: 1.4em;
-  background-color: #e84242;
-}
-
  
  /* ====================================
   * 3. 投稿・記事関連のスタイル
