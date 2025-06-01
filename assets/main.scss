@@ -121,52 +121,26 @@ body {
  }
  
 .site-footer {
+  background-color: #f8f8f8; /* 任意で背景色を変更 */
+  color: #666; /* 文字色（やや薄め） */
+  font-size: 0.9rem;
+  padding: 1.5rem 0;
   text-align: center;
-  margin-top: 4rem;
-  padding: 2rem 1rem;
-  font-size: 0.875rem;
-  color: #888;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid #ddd; /* 上の境界線 */
+}
+
+.site-footer .wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .site-footer .copyright {
   margin: 0;
+  line-height: 1.5;
 }
 
 
-
- .footer-categories {
-   margin-top: 2rem;
-   text-align: center;
- }
- 
- .footer-categories-heading {
-   font-size: 0.9rem;
-   color: #666;
-   margin-bottom: 0.5rem;
- }
- 
- .footer-category-links {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   gap: 0.4rem;
- }
- 
- .footer-category-badge {
-   display: inline-block;
-   font-size: 0.7rem;
-   color: #e84242;
-   background-color: #f5f5f5;
-   padding: 0.25rem 0.6rem;
-   border-radius: 0.5rem;
-   text-decoration: none;
-   transition: background-color 0.2s;
- }
- 
- .footer-category-badge:hover {
-   background-color: #e0e0e0;
- }
  
  .article-list {
   list-style: none;
