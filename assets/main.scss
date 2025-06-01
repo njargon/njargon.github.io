@@ -762,6 +762,13 @@ body {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .post-content h1,
+  .post-title {
+    font-size: 1.5rem; 
+  }
+}
+
 
 
 
