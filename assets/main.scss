@@ -503,6 +503,15 @@ body {
   position: relative;
   list-style: none; 
 }
+/* 段落とリストの間には余白をつける */
+.post-content p + ul,
+.post-content p + ol,
+.post-content ul + p,
+.post-content ol + p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 
  
  .post-content ol {
