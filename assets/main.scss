@@ -788,6 +788,13 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .article-list .article-item .article-info.horizontal {
+    margin-left: 1rem;  
+  }
+}
+
+
 
 
 /* ====================================
