@@ -716,9 +716,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .post-title {
+  .post h1.post-title {
     font-size: 1.5rem;
   }
+}
+
+@media screen and (max-width: 768px) {
 
   #ui-toc-affix {
     display: none;
