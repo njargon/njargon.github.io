@@ -781,6 +781,13 @@ body {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .tile-item-wrapper {
+    width: 120px;        
+    aspect-ratio: 4 / 3; 
+  }
+}
+
 
 
 /* ====================================
