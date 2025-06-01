@@ -709,26 +709,21 @@ body {
   margin: 1em auto;
 }
 
-@media screen and (max-width: 600px) {
-  .obsidian-img {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #ui-toc-affix {
-    display: none;
-  }
-}
-
-
+/* --- モバイル（〜600px）向け --- */
 @media screen and (max-width: 600px) {
   body {
-    font-size: 15px;  
+    font-size: 15px;
   }
 
+  .wrapper,
   .post-content {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     font-size: 15px;
+  }
+
+  .post-content h1 {
+    font-size: 1.5rem;
   }
 
   .post-content h2 {
@@ -747,28 +742,23 @@ body {
   .practice-date {
     font-size: 13px;
   }
-}
 
-
-
-@media screen and (max-width: 600px) {
-  .post-content {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  }
-
-  .wrapper {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  .obsidian-img {
+    max-width: 100%;
   }
 }
 
+/* --- タブレット以下（〜768px）でTOC非表示とh1調整 --- */
 @media screen and (max-width: 768px) {
-  .post-content h1,
+  #ui-toc-affix {
+    display: none;
+  }
+
   .post-title {
-    font-size: 0.5rem; 
+    font-size: 1.5rem;
   }
 }
+
 
 
 
