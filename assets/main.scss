@@ -494,13 +494,16 @@ body {
   * 4. リスト・装飾・アイコン・マーク
   * ==================================== */
  
- .post-content ul {
-   list-style: none;
-   margin: 0;
-   padding-left: 1rem;
-   margin-bottom: 1.5rem;
-   position: relative;
- }
+/* 箇条書きの上下マージンを削除 */
+.post-content ul,
+.post-content ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 1rem;
+  position: relative;
+  list-style: none; 
+}
+
  
  .post-content ol {
   margin-bottom: 1.5rem;
@@ -509,7 +512,7 @@ body {
  .post-content ul li {
    position: relative;
    padding-left: 0.5rem;
-   margin-bottom: 0rem;
+   margin-bottom: 0.5rem;
  }
  
  .post-content ul li::before {
