@@ -10,6 +10,8 @@ permalink: /drawings/
     <a href="/drawings/" class="top-nav-link">drawings</a>
 </nav>
 
+<hr class="section-divider">
+
 <h2 class="section-heading">落書き</h2>
 
 {% assign rakugaki_posts = site.posts | where_exp: "post", "post.categories contains '落書き'" %}
