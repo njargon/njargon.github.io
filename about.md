@@ -36,7 +36,8 @@ permalink: /about/
 
 ## 各種リンク
 - Twitter: [https://twitter.com/sodemizu](https://twitter.com/sodemizu)
-	- 一枚絵は基本的にここに投稿すると思います。最近描いてませんが、、
+	- 今まで使っていた絵垢です。
+- Twitter:
 - Bluesky: [https://bsky.app/profile/njargon.bsky.social](https://bsky.app/profile/njargon.bsky.social)
 	- ラフに落書きを上げたり、日常ツイート・交流ができる場が欲しくて作った経緯があります。見る頻度は減ってますが、、
 - Pixiv: [https://www.pixiv.net/users/74429578](https://www.pixiv.net/users/74429578)
