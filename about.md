@@ -36,11 +36,14 @@ permalink: /about/
 
 ## 各種リンク
 - Twitter: [https://twitter.com/sodemizu](https://twitter.com/sodemizu)
-	- 今まで使っていた絵垢です。どうしようかなと思っています。
-- Twitter:
+	- 絵垢です。どうしようかなと思っています。
+- Twitter:[https://x.com/njargon_nyan](https://x.com/njargon_nyan)
+	- 雑多です。これから使っていきたい！
+- Bluesky:[https://bsky.app/profile/njargon.bsky.social](https://bsky.app/profile/njargon.bsky.social)
+	- 今後は使わないかなぁ。
 - Pixiv: [https://www.pixiv.net/users/74429578](https://www.pixiv.net/users/74429578)
 	- あんまり使いません。昔の絵があったりします。
 
-(最終更新：20250714)
+(最終更新：2025071r)
 
 
