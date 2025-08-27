@@ -1,7 +1,7 @@
 ---
 layout: about
 title: Drawings
-permalink: /drawings/
+permalink: /drawings-idea/
 ---
 
 <nav class="top-nav">
