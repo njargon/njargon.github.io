@@ -12,9 +12,16 @@ permalink: /drawings/
 
 ## 描いたもの(改装中)
 
-- 落書きや練習を置いています。
+- サイトの情報構造をもっといい感じにしたいのでこのページをどうしようかなと思っている。
+- 
+- 
 - まとめて見たい方は以下のページへどうぞ。
 
-👉 [ギャラリーを見る](https://njargon.github.io/drawings-gallery/)
+
+## 落書き
+
+## 練習
+
+👉 [元々のページ](https://njargon.github.io/drawings-gallery/)
 
 
