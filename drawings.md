@@ -24,7 +24,7 @@ permalink: /drawings/
 
 ## 書き散らし
 (一ページに気が向いたときに書き足していく)
-- 描きたいもの：リンク
+- 描きたいもの：[リンク](https://njargon.github.io/drawings-idea/)
 - 描き方：リンク
 	- 適宜ざっくりテーマ別に一ページ作る
 
