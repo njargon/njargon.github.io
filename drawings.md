@@ -10,11 +10,11 @@ permalink: /drawings/
     <a href="/drawings/" class="top-nav-link">drawings</a>
 </nav>
 
-## Drawings
+## 描いたもの(改装中)
 
 - 落書きや練習を置いています。
 - まとめて見たい方は以下のページへどうぞ。
 
-👉 [ギャラリーを見る](/drawings/gallery/)
+👉 [ギャラリーを見る](https://njargon.github.io/drawings-gallery/)
 
 
