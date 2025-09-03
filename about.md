@@ -41,7 +41,9 @@ permalink: /about/
 	- うむむ、、
 - Pixiv: [https://www.pixiv.net/users/74429578](https://www.pixiv.net/users/74429578)
 	- あんまり使いません。昔の絵があったりします。
+- Discord作業鯖:[https://disboard.org/ja/server/1401724107103666308](https://disboard.org/ja/server/1401724107103666308)
+	- お気軽に！
 
-(最終更新：20250714)
+(最終更新：20250904)
 
 
