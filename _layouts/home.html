@@ -16,12 +16,14 @@ layout: default
 
   {{ content }}
 
-  {%- if site.posts.size > 0 -%}
-  <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-  <ul class="post-list">
-    {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-    {% for post in site.posts limit:3 %}
-      {% unless post.categories contains '練習' or post.categories contains '落書き' %}
+  {%- assign filtered_posts = site.posts 
+      | where_exp: "post", "post.categories contains '練習' == false and post.categories contains '落書き' == false" -%}
+
+  {%- if filtered_posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <ul class="post-list">
+      {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+      {% for post in filtered_posts limit:3 %}
         <li>
           <span class="post-meta">
             {{ post.date | date: date_format }}
@@ -39,12 +41,12 @@ layout: default
           {% endif %}
           <hr class="post-divider">
         </li>
-      {% endunless %}
-    {% endfor %}
-  </ul>
-{%- endif -%}
+      {% endfor %}
+    </ul>
+  {%- endif -%}
 
 </div>
+
 
 
 
