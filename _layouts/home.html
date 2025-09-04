@@ -21,27 +21,29 @@ layout: default
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-      {% assign latest_post = filtered_posts | first %}
-      <li>
-        <span class="post-meta">
-          {{ latest_post.date | date: date_format }}
-          {% if latest_post.author %}
-            ・{{ latest_post.author }}
+      {% for post in filtered_posts limit:3 %}
+        <li>
+          <span class="post-meta">
+            {{ post.date | date: date_format }}
+            {% if post.author %}
+              ・{{ post.author }}
+            {% endif %}
+          </span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {% if site.show_excerpts %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 80 }}</p>
           {% endif %}
-        </span>
-        <h3>
-          <a class="post-link" href="{{ latest_post.url | relative_url }}">
-            {{ latest_post.title | escape }}
-          </a>
-        </h3>
-        {% if site.show_excerpts %}
-          <p class="post-excerpt">{{ latest_post.excerpt | strip_html | truncate: 80 }}</p>
-        {% endif %}
-        <hr class="post-divider">
-      </li>
+          <hr class="post-divider">
+        </li>
+      {% endfor %}
     </ul>
   {%- endif -%}
 
 </div>
+
 
 
