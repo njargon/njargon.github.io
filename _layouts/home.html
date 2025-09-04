@@ -16,7 +16,9 @@ layout: default
 
   {{ content }}
 
-  {%- assign filtered_posts = site.posts | reject: "categories", "練習" | reject: "categories", "落書き" -%}
+  {%- assign filtered_posts = site.posts 
+      | where_exp: "post", "post.categories contains '練習' == false and post.categories contains '落書き' == false" -%}
+
   {%- if filtered_posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
@@ -44,4 +46,5 @@ layout: default
   {%- endif -%}
 
 </div>
+
 
