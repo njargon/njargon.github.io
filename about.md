@@ -41,7 +41,7 @@ permalink: /about/
 - Pixiv: [users/74429578](https://www.pixiv.net/users/74429578)
 	- あんまり使いません。昔の絵があったりします。
 - Discord:[server/1401724107103666308](https://disboard.org/ja/server/1401724107103666308)
-	- 作業鯖です、お気軽に！
+	- 作業鯖です、最近使ってませんがお気軽に！
 
 (最終更新：20250916)
 
