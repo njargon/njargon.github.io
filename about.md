@@ -35,13 +35,13 @@ permalink: /about/
 - たいしたものは上げてないですが、もし興味を持ってくれた方がいれば、SNSで気軽に話しかけてもらえると嬉しいです。
 
 ## 各種リンク
-- Twitter: [リンク](https://twitter.com/sodemizu)
+- Twitter: [https://twitter.com/sodemizu](https://twitter.com/sodemizu)
 	- 絵垢です。どうしようかなと思っています。
-- Bluesky:[リンク](https://bsky.app/profile/njargon.bsky.social)
+- Bluesky:[https://bsky.app/profile/njargon.bsky.social](https://bsky.app/profile/njargon.bsky.social)
 	- うむむ、、
-- Pixiv: [リンク](https://www.pixiv.net/users/74429578)
+- Pixiv: [https://www.pixiv.net/users/74429578](https://www.pixiv.net/users/74429578)
 	- あんまり使いません。昔の絵があったりします。
-- Discord:[リンク](https://disboard.org/ja/server/1401724107103666308)
+- Discord:[https://disboard.org/ja/server/1401724107103666308](https://disboard.org/ja/server/1401724107103666308)
 	- 作業鯖です、お気軽に！
 
 (最終更新：20250904)
