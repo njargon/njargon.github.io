@@ -139,6 +139,43 @@ body {
 }
 
 
+// 3️⃣ 記事部分を明示的に白背景にする（重なり防止）
+.page-content, .post-content {
+  background-color: #fefefe;
+  color: #111; /* 読みやすく戻す */
+}
+
+/* ==============================
+   全体の背景を黒に（上位要素ごと）
+   ============================== */
+html,
+body,
+.site,
+.page-content {
+  background-color: #f0f0f0 !important;
+}
+
+/* ==============================
+   中央コンテンツ部分だけ白背景
+   ============================== */
+.wrapper {
+  background-color: #fefefe;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 0.25rem;
+}
+
+/* ==============================
+   コンテンツ内の文字は黒
+   ============================== */
+.wrapper, 
+.wrapper * {
+  color: #111;
+}
+
+
+
  
  .article-list {
   list-style: none;

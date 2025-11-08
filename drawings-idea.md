@@ -1,5 +1,5 @@
 ---
-layout: about
+layout: default
 title: Drawings
 permalink: /drawings-idea/
 ---
@@ -35,4 +35,6 @@ permalink: /drawings-idea/
 ## 状況
 - うさぎ葬
 
+
+aa
 

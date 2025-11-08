@@ -1,0 +1,158 @@
+/* =========================================================
+   下部に固定されるメッセージウィンドウのみ（背景なし）
+   ========================================================= */
+#dialogue-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  pointer-events: none; /* 背景クリックを通す */
+}
+
+/* =========================================================
+   メッセージボックス本体
+   ========================================================= */
+#dialogue-box {
+  pointer-events: auto;
+  width: 100%;
+  max-width: 800px;
+  min-height: 8rem;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+
+  background: #4d7073;
+  color: #ffffff;
+  font-family: "MS Gothic", "Hiragino Sans", monospace;
+  line-height: 1.7;
+  box-sizing: border-box;
+  text-shadow: 0 0 1px #fff;
+
+  /* ドット感を出すエフェクト（立ち絵には影響しない） */
+  filter: contrast(200%) brightness(130%) saturate(140%);
+  transform: scale(1.02);
+  image-rendering: pixelated;
+
+  border: 2px solid #c2c5a6;
+  border-radius: 0;
+  box-shadow:
+    inset -2px -2px 0 #2e3d40,
+    inset  2px  2px 0 #2e3d40,
+    0 0 0 2px #2b4c57;
+}
+
+/* =========================================================
+   コンテンツレイアウト（アイコン＋テキスト）
+   ========================================================= */
+#dialogue-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+/* =========================================================
+   左側アイコン枠（ボックス内）
+   ========================================================= */
+#character-icon {
+  width: 64px;
+  height: 64px;
+  background-color: #000000; /* ← 画像がない時も黒で埋める */
+  background-image: none;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid #c2c5a6;
+  box-shadow:
+    inset -2px -2px 0 #2b4c57,
+    inset  2px  2px 0 #4d7073,
+    0 0 0 2px #2b4c57;
+  image-rendering: pixelated;
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   右側テキストブロック
+   ========================================================= */
+#dialogue-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex: 1;
+  align-items: flex-start;
+}
+
+/* =========================================================
+   セリフテキスト
+   ========================================================= */
+#dialogue-text {
+  color: #ffffff;
+  font-family: "MS Gothic", "Hiragino Sans", monospace;
+  line-height: 1.7;
+  text-shadow: 0 0 1px #fff;
+  filter: contrast(200%) brightness(130%) saturate(140%);
+  image-rendering: pixelated;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+/* =========================================================
+   ボタン（選択肢・スタート）
+   ========================================================= */
+.choice, #start-btn {
+  display: inline-block;
+  margin: 0.4rem 0.8rem 0 0;
+  padding: 0.4rem 1rem;
+  background: #2b2b2b;
+  color: #fff;
+  border: 1px solid #4a6fa5;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.15s ease, transform 0.1s ease;
+  flex-shrink: 0;
+}
+.choice:hover, #start-btn:hover {
+  background: #4a6fa5;
+  transform: translateY(-1px);
+}
+
+/* =========================================================
+   立ち絵（テキストボックス外配置・下端を接地）
+   ========================================================= */
+#character-sprite {
+  position: fixed;
+  bottom: calc(8rem + 2px); /* ← テキストボックス上端に接するように */
+  left: calc(50% - 400px);  /* ← テキストボックス中央から左に寄せて調整 */
+  width: 200px;
+  height: 260px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-image: none;
+  z-index: 1001;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.4s ease;
+  opacity: 0;
+
+  /* ✅ 立ち絵にはドット効果を一切適用しない */
+  filter: none !important;
+  image-rendering: auto !important;
+}
+
+/* =========================================================
+   レスポンシブ調整
+   ========================================================= */
+@media (max-width: 768px) {
+  #dialogue-box {
+    font-size: 0.9rem;
+    padding: 0.8rem 1rem;
+  }
+}
+
+
+
+
