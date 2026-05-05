@@ -30,9 +30,9 @@ body {
  .site-header {
    border-top: none !important;
    box-shadow: none !important;
-   background-color: white;
    margin-bottom: 0 !important;
    padding-bottom: 0 !important;
+   border-bottom: none;
  }
  
  .site-header .wrapper {
@@ -44,6 +44,10 @@ body {
    padding-bottom: 0;
    gap: 0 !important;
    margin-bottom: 0 !important;
+   max-width: 760px;
+   margin: 0 auto;
+   background-color: white;
+   border-bottom: 1.5px solid #e8e8e8;
  }
  
  .site-title {
@@ -121,20 +125,26 @@ body {
  
 .site-footer {
   color: #666; /* 文字色（やや薄め） */
+  border-top: none;
   font-size: 0.9rem;
-  padding: 1.5rem 0;
+  padding: 0;
   text-align: center;
-  border-top: 1px solid #ddd; /* 上の境界線 */
 }
 
 .site-footer .wrapper {
-  max-width: 800px;
+  background-color: white;
+  border-top: 1.5px solid #e8e8e8;
+  max-width: 760px;
+  padding-top: 1.0rem;
+  padding-bottom: 1.0rem;
   margin: 0 auto;
-  padding: 0 1rem;
+  border-radius: 0 0 0.25rem 0.25rem;
 }
 
 .site-footer .copyright {
   margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   line-height: 1.5;
 }
 
@@ -142,6 +152,8 @@ body {
 // 3️⃣ 記事部分を明示的に白背景にする（重なり防止）
 .page-content, .post-content {
   background-color: #fefefe;
+  margin: 0;
+  padding: 0;
   color: #111; /* 読みやすく戻す */
 }
 
@@ -163,7 +175,7 @@ body,
   max-width: 760px;
   margin: 0 auto;
   padding: 2rem;
-  border-radius: 0.25rem;
+  border-radius: 0 0 0 0;
 }
 
 /* ==============================
