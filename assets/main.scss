@@ -102,7 +102,12 @@ body {
   transition: color 0.2s;
   margin-top: 0;
   padding-top: 0; 
+  display: inline-block;
+  min-width: 5rem;
+  text-align: center;
 }
+
+
 
 .top-nav-link:visited {
   color: #e84242;   
@@ -188,6 +193,9 @@ body,
 .wrapper, 
 .wrapper * {
   color: #111;
+}
+.site-header .wrapper .header-description {
+  color: #c7c7c7 !important;
 }
 
 
@@ -521,6 +529,8 @@ body,
    line-height: 1.4;
    margin-top: 0.3rem;
    margin-bottom: 1.5rem;
+   width: 640px;
+   margin: auto;
  }
  
  .post-divider {
@@ -588,7 +598,8 @@ body,
  .post-content ul li {
    position: relative;
    padding-left: 0.5rem;
-   margin-bottom: 0.5rem;
+   margin-top: 0.2rem;
+   margin-bottom: 0.2rem;
  }
  
  .post-content ul li::before {
