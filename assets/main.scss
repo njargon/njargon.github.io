@@ -108,14 +108,18 @@ body {
   text-align: center;
 }
 
-
-
 .top-nav-link:visited {
   color: #e84242;   
 }
 
 .top-nav-link:hover {
   color: #e84242;
+}
+
+.site-header .top-nav-link,
+.site-header .top-nav-link:link,
+.site-header .top-nav-link:visited {
+  color: #e84242 !important;
 }
 
  
@@ -870,6 +874,15 @@ body,
   }
 }
 
+@media screen and (max-width: 600px) {
+  .post-excerpt {
+    width: auto;
+    max-width: none;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    box-sizing: border-box;
+  }
+}
 
 
 
