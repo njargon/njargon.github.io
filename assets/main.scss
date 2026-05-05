@@ -531,9 +531,12 @@ body,
    line-height: 1.4;
    margin-top: 0.3rem;
    margin-bottom: 1.5rem;
-   width: 640px;
+   max-width: 640px;
+   width: 100%;
    margin: auto;
  }
+
+
  
  .post-divider {
    width: 33%;
