@@ -191,10 +191,18 @@ body,
 /* ==============================
    コンテンツ内の文字は黒
    ============================== */
-.wrapper, 
-.wrapper * {
-  color: #555;;
+.page-content .wrapper {
+  color: #555;
 }
+
+
+
+.post-content p,
+.post-content li {
+  color: #555;
+}
+
+
 .site-header .wrapper .header-description {
   color: #c7c7c7 !important;
 }
