@@ -116,13 +116,7 @@ body {
   color: #e84242;
 }
 
-.site-header .top-nav-link,
-.site-header .top-nav-link:link,
-.site-header .top-nav-link:visited {
-  color: #e84242 !important;
-}
 
- 
  .page-content {
    margin-top: 0.3rem;
    padding-top: 0 !important;
@@ -203,6 +197,16 @@ body,
 }
 .site-header .wrapper .header-description {
   color: #c7c7c7 !important;
+}
+.site-header .top-nav-link,
+.site-header .top-nav-link:link,
+.site-header .top-nav-link:visited {
+  color: #e84242 !important;
+}
+
+.wrapper .post-meta,
+.wrapper .post-meta * {
+  color: #999 !important;
 }
 
 
