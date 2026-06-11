@@ -4,12 +4,6 @@ title: About
 permalink: /about/
 ---
 
-<nav class="top-nav">
-    <a href="/about/" class="top-nav-link">about</a>
-    <a href="/texts/" class="top-nav-link">texts</a> <!-- ← 中央 -->
-    <a href="/drawings/" class="top-nav-link">drawings</a>
-</nav>
-
 ## このサイトについて
 
 - 管理人がかいた絵や記事をおいています。

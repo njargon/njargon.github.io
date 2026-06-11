@@ -580,7 +580,14 @@ body,
    font-style: normal;
  }
  
- 
+
+.page-content .wrapper article a,
+.page-content .wrapper article a:link,
+.page-content .wrapper article a:visited,
+.page-content .wrapper article a:active {
+  color: #2a7ae2;
+}
+
  /* ====================================
   * 4. リスト・装飾・アイコン・マーク
   * ==================================== */
