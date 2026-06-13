@@ -827,6 +827,21 @@ body,
   margin: 1em auto;
 }
 
+.obsidian-figure {
+  margin: 1em auto;
+  text-align: center;
+}
+
+.obsidian-figure .obsidian-img {
+  margin-bottom: 0.4em;
+}
+
+.obsidian-figure figcaption {
+  font-size: 0.9rem;
+  color: #777;
+  line-height: 1.5;
+}
+
 @media screen and (max-width: 800px) {
   .post-title {
     font-size: 36px;
