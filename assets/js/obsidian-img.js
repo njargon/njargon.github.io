@@ -5,13 +5,18 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obsidian形式の画像記法を検出する
     // 例: ![[sample.jpg]]
     // 例: ![[sample.jpg::説明文]]
+    // 例: ![[https://media.tenor.com/xxxx/xxxx.gif]]
+    // 例: ![[https://media.tenor.com/xxxx/xxxx.gif::説明文]]
     const pattern = /!\[\[(.+?\.(png|jpg|jpeg|gif|webp))(?:::(.+?))?\]\]/gi;
   
     container.innerHTML = container.innerHTML.replace(pattern, function (match, filename, ext, caption) {
       // filename がすでにパスを含んでいる場合はそのまま使う
-      let src = filename.startsWith('/') || filename.startsWith('assets/')
-        ? `/${filename.replace(/^\/+/, "")}`
-        : `/assets/images/${filename}`;
+      // http(s) から始まる場合は外部URLとしてそのまま使う
+      let src = filename.startsWith('http://') || filename.startsWith('https://')
+        ? filename
+        : filename.startsWith('/') || filename.startsWith('assets/')
+          ? `/${filename.replace(/^\/+/, "")}`
+          : `/assets/images/${filename}`;
   
       // 説明文がある場合は figure + figcaption として出力する
       if (caption) {
